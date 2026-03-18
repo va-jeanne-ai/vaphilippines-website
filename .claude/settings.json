@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sips -Z 400 \"/Users/hazelapuhin/Website/images/portrait-person-ai-robot.jpg\" --out /tmp/ff-small.jpg)"
+    ]
+  }
+}

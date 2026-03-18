@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Virtual Assistants Philippines</title>
+    <meta name="description" content="Contact Virtual Assistants Philippines. Let's talk about your operational challenges and how we can help your SEO agency scale.">
+    <meta property="og:title" content="Contact Us - Virtual Assistants Philippines">
+    <meta property="og:description" content="Contact Virtual Assistants Philippines. Let's talk about your operational challenges and how we can help your SEO agency scale.">
+    <meta property="og:image" content="https://virtualassistantsph.com/images/va-philippines-logo.png">
+    <meta property="og:url" content="https://virtualassistantsph.com/contact.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/va-philippines-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/va-philippines-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>if('scrollRestoration' in history) history.scrollRestoration='manual'; window.scrollTo(0,0);</script>
+    <!-- Universal Nav & Footer -->
+    <script src="components.js" defer></script>
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            background: #000000;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* ── Gradient Text override ─────────────────────── */
+        .gradient-text {
+            text-shadow: none !important;
+        }
+
+        /* ── CSS Animated Background ────────────────────── */
+        .contact-bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background: transparent;
+        }
+
+        #ghost-cursor-container {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* ── Main Content ───────────────────────────────── */
+        main {
+            padding-top: 0;
+            min-height: 100vh;
+            position: relative;
+            z-index: 10;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ── Glow Keyframes ─────────────────────────────── */
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7), 0 0 20px rgba(20, 184, 166, 0.12), 0 0 40px rgba(20, 184, 166, 0.06); }
+            50%       { text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7), 0 0 30px rgba(20, 184, 166, 0.22), 0 0 60px rgba(20, 184, 166, 0.10); }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ── Hero Section ───────────────────────────────── */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 84px 2rem 2rem;
+            position: relative;
+            opacity: 0;
+            animation: fadeInDown 0.8s ease forwards;
+        }
+
+        .hero::before {
+            display: none;
+        }
+
+        .hero h1,
+        .hero p {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 1.2rem;
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.9), 0 8px 40px rgba(0,0,0,0.8);
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.85);
+            text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7);
+            max-width: 580px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* ── Section Title ──────────────────────────────── */
+        .section-title {
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 4rem;
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.9), 0 8px 40px rgba(0,0,0,0.8);
+            position: relative;
+            z-index: 2;
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, transparent 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* ── Contact Section ────────────────────────────── */
+        .contact-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 10rem;
+            align-items: start;
+            padding: 0 2rem;
+        }
+
+        .gc-glow::before {
+            content: "";
+            position: absolute;
+            inset: 25px;
+            border-radius: inherit;
+            box-shadow:
+                inset 0 0 0 1px var(--glow-color),
+                inset 0 0 4px 1px var(--glow-color),
+                0 0 4px 1px var(--glow-color),
+                0 0 12px 2px var(--glow-color);
+        }
+
+        /* ── Form Card ──────────────────────────────────── */
+        .form-card {
+            --pointer-x: 50%;
+            --pointer-y: 50%;
+            --pointer-deg: 45deg;
+            --proximity: 0;
+            --glow-color: #00ffff;
+            position: relative;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .form-card-inner {
+            position: relative;
+            z-index: 2;
+            background: #000000;
+            border: 0.5px solid rgba(255, 255, 255, 0.08);
+            border-radius: inherit;
+            padding: 2.5rem;
+            margin: 1px;
+        }
+
+        .card-heading {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        /* ── Info Card ──────────────────────────────────── */
+        .info-card {
+            --pointer-x: 50%;
+            --pointer-y: 50%;
+            --pointer-deg: 45deg;
+            --proximity: 0;
+            --glow-color: #ff00aa;
+            position: relative;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .info-card-inner {
+            position: relative;
+            z-index: 2;
+            background: #000000;
+            border: 0.5px solid rgba(255, 255, 255, 0.08);
+            border-radius: inherit;
+            padding: 2.5rem;
+            margin: 1px;
+        }
+
+        /* ── Form Styling ───────────────────────────────── */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 0.5px solid rgba(255, 255, 255, 0.12);
+            border-radius: 8px;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: rgba(0, 255, 255, 0.4);
+            background: rgba(0, 255, 255, 0.03);
+            box-shadow: 0 0 8px rgba(0, 255, 255, 0.15);
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='rgba(255,255,255,0.4)' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            padding-right: 2rem;
+        }
+
+        .form-group select {
+            display: none;
+        }
+
+        .custom-select {
+            position: relative;
+            width: 100%;
+        }
+
+        .custom-select-trigger {
+            width: 100%;
+            padding: 0.85rem 2rem 0.85rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 0.5px solid rgba(255, 255, 255, 0.12);
+            border-radius: 8px;
+            color: rgba(255, 255, 255, 0.25);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='rgba(255,255,255,0.4)' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+        }
+
+        .custom-select-trigger.has-value {
+            color: #ffffff;
+        }
+
+        .custom-select-trigger:hover,
+        .custom-select.open .custom-select-trigger {
+            border-color: rgba(0, 255, 255, 0.4);
+            background-color: rgba(0, 255, 255, 0.03);
+            box-shadow: 0 0 8px rgba(0, 255, 255, 0.15);
+        }
+
+        .custom-select-dropdown {
+            display: none;
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            right: 0;
+            background: #1a1a1a;
+            border: 0.5px solid rgba(255, 255, 255, 0.12);
+            border-radius: 8px;
+            overflow: hidden;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .custom-select.open .custom-select-dropdown {
+            display: block;
+        }
+
+        .custom-select-option {
+            padding: 0.7rem 1rem;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+
+        .custom-select-option:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .custom-select-option.selected {
+            background: rgba(0, 255, 255, 0.1);
+        }
+
+        .custom-select-option.placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* ── Submit Button ──────────────────────────────── */
+        .submit-btn {
+            width: 100%;
+            padding: 1.1rem 3rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #FFFF00, #00FFFF);
+            color: #000000;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+            margin-top: 0.5rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.5), 0 0 50px rgba(255, 255, 0, 0.2);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        /* ── Info Items ─────────────────────────────────── */
+        .info-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .info-item:hover {
+            transform: translateX(5px);
+        }
+
+        .info-label {
+            color: rgba(255, 255, 255, 0.65);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-value {
+            color: #ffffff;
+            font-size: 1.05rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .info-value a {
+            color: #00FFFF;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .info-value a:hover {
+            text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+        }
+
+        /* ── Scroll Animation ───────────────────────────── */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── Mobile Responsive ──────────────────────────── */
+        @media (max-width: 768px) {
+            .contact-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-card-inner,
+            .info-card-inner {
+                padding: 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            .form-card-inner,
+            .info-card-inner {
+                padding: 1rem;
+                border-radius: 10px;
+            }
+
+            .form-group {
+                margin-bottom: 1rem;
+            }
+
+            .submit-btn {
+                padding: 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS Animated Background -->
+    <div class="contact-bg">
+        <div id="ghost-cursor-container"></div>
+    </div>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1><span style="background: linear-gradient(135deg, #ffffff, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: none !important;">Let's Talk.</span><br><span class="gradient-text">No Pitch Deck. Just <span class="scramble-word">Solutions.</span></span></h1>
+                <p>Tell us what is breaking. We will tell you how to fix it.</p>
+            </section>
+
+            <section class="contact-section">
+                <div class="form-card glow-card fade-in">
+                    <div class="form-card-inner">
+                        <h2 class="card-heading"><span class="gradient-text">Send Us a Message</span></h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" required placeholder="Your company name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="revenue">Monthly Revenue</label>
+                                <select id="revenue" name="revenue" required>
+                                    <option value="">Select revenue range</option>
+                                    <option value="25k-50k">$25K - $50K/mo</option>
+                                    <option value="50k-100k">$50K - $100K/mo</option>
+                                    <option value="over-100k">$100K+/mo</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="challenge">Main Challenge</label>
+                                <select id="challenge" name="challenge" required>
+                                    <option value="">Select your main challenge</option>
+                                    <option value="va-burned">Been burned by unreliable VAs</option>
+                                    <option value="stuck-fulfillment">Stuck doing fulfillment myself</option>
+                                    <option value="scaling">Need to scale but no capacity</option>
+                                    <option value="managing-people">Spending too much time managing people</option>
+                                    <option value="ai-automation">Want AI automation for my agency</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required placeholder="Tell us about your needs..."></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Request a Strategy Call</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="info-card glow-card fade-in">
+                    <div class="info-card-inner">
+                        <h2 class="card-heading"><span style="color: #00FFFF; -webkit-text-fill-color: #00FFFF; text-shadow: none !important;">Get In Touch</span></h2>
+                        <div class="info-item">
+                            <div class="info-label">Email</div>
+                            <div class="info-value"><a href="mailto:hello@virtualassistantsph.com">hello@virtualassistantsph.com</a></div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">Response Time</div>
+                            <div class="info-value">Within 24 business hours</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">How We Work</div>
+                            <div class="info-value">Async-first. No mandatory check-in calls.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        // ── Intersection Observer for scroll animations ──────────────
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // ── Form submission handler ─────────────────────────────────
+        const contactForm = document.getElementById('contactForm');
+        const GHL_WEBHOOK_URL = 'YOUR_GHL_WEBHOOK_URL_HERE';
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = contactForm.querySelector('.submit-btn');
+            const originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+
+            const formData = {
+                full_name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                company_name: document.getElementById('company').value,
+                monthly_revenue: document.getElementById('revenue').value,
+                main_challenge: document.getElementById('challenge').value,
+                message: document.getElementById('message').value
+            };
+
+            try {
+                const res = await fetch(GHL_WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                if (!res.ok) throw new Error('Network error');
+                alert('Thank you for reaching out! We will respond within 24 business hours.');
+                contactForm.reset();
+                document.querySelectorAll('.custom-select-trigger').forEach(t => {
+                    t.textContent = t.closest('.custom-select').querySelector('.custom-select-option').textContent;
+                    t.classList.remove('has-value');
+                });
+            } catch (err) {
+                alert('Something went wrong. Please email us at hello@virtualassistantsph.com');
+            } finally {
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }
+        });
+
+        // ── Glowing Edge Cards (proximity-based) ────────────────────
+        (function () {
+            const cards = document.querySelectorAll('.glow-card');
+            if (!cards.length) return;
+            const TRIGGER_RADIUS = 350;
+            const clamp = (v, lo, hi) => Math.min(Math.max(v, lo), hi);
+            const round = (v) => parseFloat(v.toFixed(3));
+
+            function distToRect(rect, px, py) {
+                const cx = clamp(px, rect.left, rect.right);
+                const cy = clamp(py, rect.top, rect.bottom);
+                return Math.sqrt((px - cx) ** 2 + (py - cy) ** 2);
+            }
+
+            function angleFromCenter(rect, px, py) {
+                const cx = rect.left + rect.width / 2;
+                const cy = rect.top + rect.height / 2;
+                const dx = px - cx, dy = py - cy;
+                if (dx === 0 && dy === 0) return 0;
+                let deg = Math.atan2(dy, dx) * (180 / Math.PI) + 90;
+                if (deg < 0) deg += 360;
+                return deg;
+            }
+
+            cards.forEach(card => {
+                ['gc-mesh-border', 'gc-glow'].forEach(cls => {
+                    const div = document.createElement('div');
+                    div.className = cls;
+                    card.insertBefore(div, card.firstChild);
+                });
+            });
+
+            document.addEventListener('pointermove', e => {
+                const mx = e.clientX, my = e.clientY;
+                cards.forEach(card => {
+                    const rect = card.getBoundingClientRect();
+                    const dist = distToRect(rect, mx, my);
+                    const proximity = clamp(1 - dist / TRIGGER_RADIUS, 0, 1);
+                    const eased = proximity * proximity * (3 - 2 * proximity);
+                    const lx = clamp(mx - rect.left, 0, rect.width);
+                    const ly = clamp(my - rect.top, 0, rect.height);
+                    const px = clamp((100 / rect.width) * lx, 0, 100);
+                    const py = clamp((100 / rect.height) * ly, 0, 100);
+                    const angle = angleFromCenter(rect, mx, my);
+                    card.style.setProperty('--pointer-x', round(px) + '%');
+                    card.style.setProperty('--pointer-y', round(py) + '%');
+                    card.style.setProperty('--pointer-deg', round(angle) + 'deg');
+                    card.style.setProperty('--proximity', round(eased));
+                });
+            });
+        })();
+    </script>
+
+    <!-- Three.js Import Map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+            "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+    }
+    </script>
+
+    <!-- Ghost Cursor Effect -->
+    <script type="module">
+    import * as THREE from 'three';
+    import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
+    import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
+    import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
+    import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
+
+    (function initGhostCursor() {
+        const host = document.getElementById('ghost-cursor-container');
+        const bgEl = document.querySelector('.contact-bg');
+        if (!host || !bgEl) return;
+
+        /* ── Configuration ─────────────────────────────── */
+        const CONFIG = {
+            color:          '#00FFFF',
+            brightness:     1.2,
+            trailLength:    20,
+            inertia:        0.4,
+            bloomStrength:  0.5,
+            bloomRadius:    0.7,
+            bloomThreshold: 0,
+            grainIntensity: 0.05,
+            edgeIntensity:  0,
+            mixBlendMode:   'screen',
+            fadeDelayMs:    200,
+            fadeDurationMs: 1000,
+            maxDPR:         0.5,
+            pixelBudget:    1.3e6
+        };
+
+        /* ── Renderer ──────────────────────────────────── */
+        const renderer = new THREE.WebGLRenderer({
+            antialias: true,
+            alpha: true,
+            depth: false,
+            stencil: false,
+            powerPreference: 'default',
+            premultipliedAlpha: false,
+            preserveDrawingBuffer: false
+        });
+        renderer.setClearColor(0x000000, 0);
+
+        const canvas = renderer.domElement;
+        canvas.style.pointerEvents = 'none';
+        canvas.style.mixBlendMode = CONFIG.mixBlendMode;
+        canvas.style.display = 'block';
+        canvas.style.width = '100%';
+        canvas.style.height = '100%';
+        canvas.style.background = 'transparent';
+        host.appendChild(canvas);
+
+        /* ── Scene ─────────────────────────────────────── */
+        const scene = new THREE.Scene();
+        const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+        const geom = new THREE.PlaneGeometry(2, 2);
+
+        const maxTrail = Math.max(1, Math.floor(CONFIG.trailLength));
+        const trailBuf = Array.from({ length: maxTrail }, () => new THREE.Vector2(0.5, 0.5));
+        let head = 0;
+
+        const baseColor = new THREE.Color(CONFIG.color);
+
+        /* ── Shaders ───────────────────────────────────── */
+        const vertexShader = `
+            varying vec2 vUv;
+            void main() {
+                vUv = uv;
+                gl_Position = vec4(position, 1.0);
+            }
+        `;
+
+        const fragmentShader = `
+            #define MAX_TRAIL_LENGTH ${maxTrail}
+            uniform float iTime;
+            uniform vec3  iResolution;
+            uniform vec2  iMouse;
+            uniform vec2  iPrevMouse[MAX_TRAIL_LENGTH];
+            uniform float iOpacity;
+            uniform float iScale;
+            uniform vec3  iBaseColor;
+            uniform float iBrightness;
+            uniform float iEdgeIntensity;
+            varying vec2  vUv;
+
+            float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123); }
+
+            float noise(vec2 p) {
+                vec2 i = floor(p), f = fract(p);
+                f = f * f * (3.0 - 2.0 * f);
+                return mix(mix(hash(i + vec2(0.0, 0.0)), hash(i + vec2(1.0, 0.0)), f.x),
+                           mix(hash(i + vec2(0.0, 1.0)), hash(i + vec2(1.0, 1.0)), f.x), f.y);
+            }
+
+            float fbm(vec2 p) {
+                float v = 0.0, a = 0.5;
+                mat2 m = mat2(cos(0.5), sin(0.5), -sin(0.5), cos(0.5));
+                for (int i = 0; i < 5; i++) {
+                    v += a * noise(p);
+                    p = m * p * 2.0;
+                    a *= 0.5;
+                }
+                return v;
+            }
+
+            vec3 tint1(vec3 base) { return mix(base, vec3(1.0), 0.15); }
+            vec3 tint2(vec3 base) { return mix(base, vec3(0.8, 0.9, 1.0), 0.25); }
+
+            vec4 blob(vec2 p, vec2 mousePos, float intensity, float activity) {
+                vec2 q = vec2(fbm(p * iScale + iTime * 0.1), fbm(p * iScale + vec2(5.2, 1.3) + iTime * 0.1));
+                vec2 r = vec2(fbm(p * iScale + q * 1.5 + iTime * 0.15), fbm(p * iScale + q * 1.5 + vec2(8.3, 2.8) + iTime * 0.15));
+                float smoke = fbm(p * iScale + r * 0.8);
+                float radius = 0.5 + 0.3 * (1.0 / iScale);
+                float distFactor = 1.0 - smoothstep(0.0, radius * activity, length(p - mousePos));
+                float alpha = pow(smoke, 2.5) * distFactor;
+                vec3 c1 = tint1(iBaseColor);
+                vec3 c2 = tint2(iBaseColor);
+                vec3 color = mix(c1, c2, sin(iTime * 0.5) * 0.5 + 0.5);
+                return vec4(color * alpha * intensity, alpha * intensity);
+            }
+
+            void main() {
+                vec2 uv = (gl_FragCoord.xy / iResolution.xy * 2.0 - 1.0) * vec2(iResolution.x / iResolution.y, 1.0);
+                vec2 mouse = (iMouse * 2.0 - 1.0) * vec2(iResolution.x / iResolution.y, 1.0);
+                vec3 colorAcc = vec3(0.0);
+                float alphaAcc = 0.0;
+
+                vec4 b = blob(uv, mouse, 1.0, iOpacity);
+                colorAcc += b.rgb;
+                alphaAcc += b.a;
+
+                for (int i = 0; i < MAX_TRAIL_LENGTH; i++) {
+                    vec2 pm = (iPrevMouse[i] * 2.0 - 1.0) * vec2(iResolution.x / iResolution.y, 1.0);
+                    float t = 1.0 - float(i) / float(MAX_TRAIL_LENGTH);
+                    t = pow(t, 2.0);
+                    if (t > 0.01) {
+                        vec4 bt = blob(uv, pm, t * 0.8, iOpacity);
+                        colorAcc += bt.rgb;
+                        alphaAcc += bt.a;
+                    }
+                }
+
+                colorAcc *= iBrightness;
+                vec2 uv01 = gl_FragCoord.xy / iResolution.xy;
+                float edgeDist = min(min(uv01.x, 1.0 - uv01.x), min(uv01.y, 1.0 - uv01.y));
+                float distFromEdge = clamp(edgeDist * 2.0, 0.0, 1.0);
+                float k = clamp(iEdgeIntensity, 0.0, 1.0);
+                float edgeMask = mix(1.0 - k, 1.0, distFromEdge);
+                float outAlpha = clamp(alphaAcc * iOpacity * edgeMask, 0.0, 1.0);
+                gl_FragColor = vec4(colorAcc, outAlpha);
+            }
+        `;
+
+        /* ── Material ──────────────────────────────────── */
+        const material = new THREE.ShaderMaterial({
+            uniforms: {
+                iTime:          { value: 0 },
+                iResolution:    { value: new THREE.Vector3(1, 1, 1) },
+                iMouse:         { value: new THREE.Vector2(0.5, 0.5) },
+                iPrevMouse:     { value: trailBuf.map(v => v.clone()) },
+                iOpacity:       { value: 1.0 },
+                iScale:         { value: 1.0 },
+                iBaseColor:     { value: new THREE.Vector3(baseColor.r, baseColor.g, baseColor.b) },
+                iBrightness:    { value: CONFIG.brightness },
+                iEdgeIntensity: { value: CONFIG.edgeIntensity }
+            },
+            vertexShader,
+            fragmentShader,
+            transparent: true,
+            depthTest: false,
+            depthWrite: false
+        });
+
+        const mesh = new THREE.Mesh(geom, material);
+        scene.add(mesh);
+
+        /* ── Post-Processing ───────────────────────────── */
+        const composer = new EffectComposer(renderer);
+        composer.addPass(new RenderPass(scene, camera));
+
+        const bloomPass = new UnrealBloomPass(
+            new THREE.Vector2(1, 1),
+            CONFIG.bloomStrength,
+            CONFIG.bloomRadius,
+            CONFIG.bloomThreshold
+        );
+        composer.addPass(bloomPass);
+
+        const filmPass = new ShaderPass({
+            uniforms: {
+                tDiffuse:  { value: null },
+                iTime:     { value: 0 },
+                intensity: { value: CONFIG.grainIntensity }
+            },
+            vertexShader: `
+                varying vec2 vUv;
+                void main() {
+                    vUv = uv;
+                    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                }
+            `,
+            fragmentShader: `
+                uniform sampler2D tDiffuse;
+                uniform float iTime;
+                uniform float intensity;
+                varying vec2 vUv;
+                float hash1(float n) { return fract(sin(n) * 43758.5453); }
+                void main() {
+                    vec4 color = texture2D(tDiffuse, vUv);
+                    float n = hash1(vUv.x * 1000.0 + vUv.y * 2000.0 + iTime) * 2.0 - 1.0;
+                    color.rgb += n * intensity * color.rgb;
+                    gl_FragColor = color;
+                }
+            `
+        });
+        composer.addPass(filmPass);
+
+        /* Unpremultiply alpha pass */
+        const unpremultiply = new ShaderPass({
+            uniforms: { tDiffuse: { value: null } },
+            vertexShader: `
+                varying vec2 vUv;
+                void main() {
+                    vUv = uv;
+                    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                }
+            `,
+            fragmentShader: `
+                uniform sampler2D tDiffuse;
+                varying vec2 vUv;
+                void main() {
+                    vec4 c = texture2D(tDiffuse, vUv);
+                    float a = max(c.a, 1e-5);
+                    vec3 straight = c.rgb / a;
+                    gl_FragColor = vec4(clamp(straight, 0.0, 1.0), c.a);
+                }
+            `
+        });
+        composer.addPass(unpremultiply);
+
+        /* ── Resize ────────────────────────────────────── */
+        function calcScale() {
+            const rect = host.getBoundingClientRect();
+            const base = 600;
+            const current = Math.min(Math.max(1, rect.width), Math.max(1, rect.height));
+            return Math.max(0.5, Math.min(2.0, current / base));
+        }
+
+        function resize() {
+            const cssW = Math.max(1, window.innerWidth);
+            const cssH = Math.max(1, window.innerHeight);
+
+            renderer.setPixelRatio(1);
+            renderer.setSize(cssW, cssH, false);
+            composer.setSize(cssW, cssH);
+
+            material.uniforms.iResolution.value.set(cssW, cssH, 1);
+            material.uniforms.iScale.value = calcScale();
+            bloomPass.setSize(cssW, cssH);
+        }
+
+        resize();
+        const ro = new ResizeObserver(resize);
+        ro.observe(host);
+
+        /* ── Pointer Tracking ──────────────────────────── */
+        const currentMouse = new THREE.Vector2(0.5, 0.5);
+        const velocity = new THREE.Vector2(0, 0);
+        let fadeOpacity = 1.0;
+        let lastMoveTime = performance.now();
+        let pointerActive = false;
+        let running = false;
+
+        function onPointerMove(e) {
+            const x = THREE.MathUtils.clamp(e.clientX / window.innerWidth, 0, 1);
+            const y = THREE.MathUtils.clamp(1 - e.clientY / window.innerHeight, 0, 1);
+            currentMouse.set(x, y);
+            pointerActive = true;
+            lastMoveTime = performance.now();
+            ensureLoop();
+        }
+
+        function onPointerEnter() {
+            pointerActive = true;
+            ensureLoop();
+        }
+
+        function onPointerLeave() {
+            pointerActive = false;
+            lastMoveTime = performance.now();
+            ensureLoop();
+        }
+
+        document.addEventListener('pointermove', onPointerMove, { passive: true });
+        document.addEventListener('pointerenter', onPointerEnter, { passive: true });
+        document.addEventListener('pointerleave', onPointerLeave, { passive: true });
+
+        /* ── Animation Loop ────────────────────────────── */
+        const start = performance.now();
+        let rafId = null;
+
+        function ensureLoop() {
+            if (!running) {
+                running = true;
+                rafId = requestAnimationFrame(animate);
+            }
+        }
+
+        function animate() {
+            const now = performance.now();
+            const t = (now - start) / 1000;
+
+            if (pointerActive) {
+                velocity.set(
+                    currentMouse.x - material.uniforms.iMouse.value.x,
+                    currentMouse.y - material.uniforms.iMouse.value.y
+                );
+                material.uniforms.iMouse.value.copy(currentMouse);
+                fadeOpacity = 1.0;
+            } else {
+                velocity.multiplyScalar(CONFIG.inertia);
+                if (velocity.lengthSq() > 1e-6) {
+                    material.uniforms.iMouse.value.add(velocity);
+                }
+                const dt = now - lastMoveTime;
+                if (dt > CONFIG.fadeDelayMs) {
+                    const k = Math.min(1, (dt - CONFIG.fadeDelayMs) / CONFIG.fadeDurationMs);
+                    fadeOpacity = Math.max(0, 1 - k);
+                }
+            }
+
+            head = (head + 1) % trailBuf.length;
+            trailBuf[head].copy(material.uniforms.iMouse.value);
+
+            const arr = material.uniforms.iPrevMouse.value;
+            for (let i = 0; i < trailBuf.length; i++) {
+                const srcIdx = (head - i + trailBuf.length) % trailBuf.length;
+                arr[i].copy(trailBuf[srcIdx]);
+            }
+
+            material.uniforms.iOpacity.value = fadeOpacity;
+            material.uniforms.iTime.value = t;
+
+            if (filmPass.uniforms.iTime) {
+                filmPass.uniforms.iTime.value = t;
+            }
+
+            composer.render();
+
+            if (!pointerActive && fadeOpacity <= 0.001) {
+                running = false;
+                rafId = null;
+                return;
+            }
+
+            rafId = requestAnimationFrame(animate);
+        }
+
+        ensureLoop();
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                if (rafId) {
+                    cancelAnimationFrame(rafId);
+                    rafId = null;
+                    running = false;
+                }
+            } else {
+                ensureLoop();
+            }
+        });
+    })();
+    </script>
+    <script>
+    document.querySelectorAll('.form-group select').forEach(select => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'custom-select';
+
+        const trigger = document.createElement('div');
+        trigger.className = 'custom-select-trigger';
+        trigger.textContent = select.options[0].textContent;
+
+        const dropdown = document.createElement('div');
+        dropdown.className = 'custom-select-dropdown';
+
+        Array.from(select.options).forEach((opt, i) => {
+            const item = document.createElement('div');
+            item.className = 'custom-select-option' + (i === 0 ? ' placeholder' : '');
+            item.textContent = opt.textContent;
+            item.dataset.value = opt.value;
+            item.addEventListener('click', () => {
+                select.value = opt.value;
+                select.dispatchEvent(new Event('change'));
+                trigger.textContent = opt.textContent;
+                trigger.classList.toggle('has-value', opt.value !== '');
+                dropdown.querySelectorAll('.custom-select-option').forEach(o => o.classList.remove('selected'));
+                if (opt.value) item.classList.add('selected');
+                wrapper.classList.remove('open');
+            });
+            dropdown.appendChild(item);
+        });
+
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            document.querySelectorAll('.custom-select.open').forEach(s => {
+                if (s !== wrapper) s.classList.remove('open');
+            });
+            wrapper.classList.toggle('open');
+        });
+
+        select.parentNode.insertBefore(wrapper, select);
+        wrapper.appendChild(trigger);
+        wrapper.appendChild(dropdown);
+    });
+
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.custom-select.open').forEach(s => s.classList.remove('open'));
+    });
+
+    // ── Text Scramble ────────────────────────────────────────────
+    const SCRAMBLE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&';
+    function scrambleEl(el) {
+        const orig = el.textContent;
+        let step = 0;
+        const total = orig.length * 3;
+        const iv = setInterval(() => {
+            el.textContent = orig.split('').map((ch, i) => {
+                if (ch === ' ') return ch;
+                return i < step / 3 ? ch : SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)];
+            }).join('');
+            step++;
+            if (step > total) { el.textContent = orig; clearInterval(iv); }
+        }, 28);
+    }
+    const scrambleObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { scrambleEl(e.target); scrambleObs.unobserve(e.target); }
+        });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.scramble-word').forEach(el => scrambleObs.observe(el));
+    </script>
+</body>
+</html>

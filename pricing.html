@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Virtual Assistants Philippines</title>
+    <meta name="description" content="Transparent 28-day pricing for Virtual Assistants Philippines. Three tiers from $2,500 to $7,000. Trained VAs, AI automation, and fully managed operations.">
+    <meta property="og:title" content="Pricing - Virtual Assistants Philippines">
+    <meta property="og:description" content="Transparent 28-day pricing for Virtual Assistants Philippines. Three tiers from $2,500 to $7,000. Trained VAs, AI automation, and fully managed operations.">
+    <meta property="og:image" content="https://virtualassistantsph.com/images/va-philippines-logo.png">
+    <meta property="og:url" content="https://virtualassistantsph.com/pricing.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/va-philippines-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/va-philippines-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>if('scrollRestoration' in history) history.scrollRestoration='manual'; window.scrollTo(0,0);</script>
+    <!-- Universal Nav & Footer -->
+    <script src="components.js" defer></script>
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --teal: #14B8A6;
+            --aqua: #00FFFF;
+            --black: #000000;
+            --yellow: #FFFF00;
+            --dark-bg: #0a0e27;
+            --card-bg: rgba(20, 184, 166, 0.05);
+        }
+
+        body {
+            background: #000000;
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Content Overlay */
+        main {
+            position: relative;
+            z-index: 10;
+            padding-top: 0;
+        }
+
+        /* Content Section */
+        .pricing-section {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px 20px;
+            margin-bottom: 0;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            position: relative;
+            z-index: 1;
+        }
+
+        .pricing-header::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 55%;
+            background: radial-gradient(
+                ellipse at center,
+                rgba(0,0,0,0.65) 0%,
+                rgba(0,0,0,0.55) 52%,
+                rgba(0,0,0,0.30) 72%,
+                rgba(0,0,0,0.08) 88%,
+                transparent      100%
+            );
+            filter: blur(24px);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .pricing-header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        .pricing-header p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 600px;
+            margin: 0 auto;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7);
+        }
+
+        /* Pricing Cards Grid */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 2rem 12rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 900px) {
+            .pricing-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .pricing-card.recommended {
+                grid-column: 1 / -1;
+                max-width: 480px;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+
+        .pricing-card {
+            background: #1a1a1a;
+            border: 2px solid rgba(0, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 2rem 2rem 5rem;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            transform: translateY(30px);
+        }
+
+        .pricing-card:nth-child(1) { animation-delay: 0.1s; }
+        .pricing-card:nth-child(2) { animation-delay: 0.2s; }
+        .pricing-card:nth-child(3) { animation-delay: 0.3s; }
+        .pricing-card:nth-child(4) { animation-delay: 0.4s; }
+        .pricing-card:nth-child(5) { animation-delay: 0.5s; }
+
+        .pricing-card.recommended {
+            grid-column: span 1;
+            background: #000000;
+            border: 1px solid var(--yellow);
+            box-shadow: 0 0 40px rgba(255, 255, 0, 0.4), inset 0 0 40px rgba(255, 255, 0, 0.1);
+            transform: scale(1.08) translateY(-15px);
+            overflow: visible;
+        }
+
+        .recommended-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #FFD700;
+            padding: 1px;
+            border-radius: 4px;
+            white-space: nowrap;
+            z-index: 10;
+        }
+
+        .recommended-badge span {
+            display: block;
+            background: #0d0d0d;
+            color: #FFD700;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            padding: 0.28rem 0.85rem;
+            border-radius: 3px;
+        }
+
+        .pricing-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #ffffff, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 1px;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffffff, #5a8a5e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 1rem 0;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .pricing-card.recommended .price {
+            background: linear-gradient(135deg, #ffffff, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .pricing-card .price-period {
+            color: #999999;
+            font-size: 0.9rem;
+        }
+
+        .pricing-card-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .pricing-card-features li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .pricing-card-features li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-card-features li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            border: 2px solid var(--teal);
+            border-radius: 50%;
+            background: rgba(20, 184, 166, 0.2);
+        }
+
+        .cta-button {
+            width: 100%;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            border: 0.5px solid rgba(0, 255, 255, 0.6);
+            background: transparent;
+            color: #00FFFF;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            background: rgba(0, 255, 255, 0.06);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .pricing-card.recommended .cta-button {
+            border: none;
+            background: linear-gradient(135deg, #FFFF00, #00FFFF);
+            color: #000000;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+        }
+
+        .pricing-card.recommended .cta-button:hover {
+            background: linear-gradient(135deg, #FFFF00, #00FFFF);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.5), 0 0 50px rgba(255, 255, 0, 0.2);
+        }
+
+        /* Footer — override components.js margin-top */
+        .site-footer {
+            margin-top: 0 !important;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-content a {
+            color: #a0a0a0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .footer-content a:hover {
+            color: var(--aqua);
+        }
+
+        .footer-text {
+            color: #999999;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .glow-text {
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .pricing-header h1 {
+                font-size: 2rem;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .pricing-card.recommended {
+                grid-column: span 1;
+                max-width: 100%;
+                transform: scale(1);
+            }
+
+            .pricing-card {
+                padding: 1.5rem;
+            }
+
+            .pricing-section {
+                padding: 2rem 1rem;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .pricing-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .pricing-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .pricing-card .price {
+                font-size: 1.8rem;
+            }
+
+            .pricing-card {
+                padding: 1.25rem;
+            }
+
+            .recommended-badge {
+                font-size: 0.5rem;
+                padding: 0.22rem 0.65rem;
+            }
+
+        }
+
+        /* Scroll Animation */
+        .scroll-animate {
+            opacity: 0;
+        }
+
+        .scroll-animate.visible {
+            opacity: 1;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        /* ── GradientBlinds canvas fills the whole section ─────────────── */
+        .gb-container {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="pricing-section">
+            <div class="gb-container" id="gbContainer"></div>
+
+            <div class="pricing-header">
+                <h1><span style="background: linear-gradient(135deg, #ffffff, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: none !important;">Transparent Pricing.</span><br>No <span class="scramble-word gradient-text">Surprises.</span></h1>
+                <p>28-day billing cycles. No hourly tracking. No micromanagement.<br>You pay for a production line, not a clock.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Card 1: The Core Backbone -->
+                <div class="pricing-card">
+                    <h3>The Core Backbone</h3>
+                    <div class="price">$2,500<span class="price-period">/28 days</span></div>
+                    <ul class="pricing-card-features">
+                        <li>1 Managed VA + Manager QA</li>
+                        <li>Production-ready, pre-trained, pre-shadowed</li>
+                        <li>Basic SOP documentation</li>
+                        <li>Admin shield (payroll and billing handled)</li>
+                        <li>Automated Friday Pulse Report</li>
+                        <li>Replacement guarantee</li>
+                    </ul>
+                    <a href="training.html" class="cta-button">Watch the Free Training</a>
+                </div>
+
+                <!-- Card 2: Scaling Agency Infrastructure (RECOMMENDED) -->
+                <div class="pricing-card recommended">
+                    <div class="recommended-badge"><span>Most Popular</span></div>
+                    <h3>Scaling Infrastructure</h3>
+                    <div class="price">$4,000<span class="price-period">/28 days</span></div>
+                    <ul class="pricing-card-features">
+                        <li>1 Primary VA + 1 Fully Trained Backup</li>
+                        <li>Zero-downtime guarantee</li>
+                        <li>Custom AI workflows by our dev team</li>
+                        <li>SOP hardening + fulfillment management</li>
+                        <li>Automated Friday Pulse Report</li>
+                        <li>Reclaim 20+ hours of your week</li>
+                    </ul>
+                    <a href="training.html" class="cta-button">Watch the Free Training</a>
+                </div>
+
+                <!-- Card 3: Institutional Scale -->
+                <div class="pricing-card">
+                    <h3>The Full Takeover</h3>
+                    <div class="price">$7,000<span class="price-period">/28 days</span></div>
+                    <ul class="pricing-card-features">
+                        <li>Unlimited VAs (per-task pricing) + Dev Team</li>
+                        <li>Full AI infrastructure build</li>
+                        <li>Monthly process optimization audits</li>
+                        <li>Live ops dashboard + strategy sync</li>
+                        <li>Complete operational exit for the founder</li>
+                        <li>Everything in Scaling Infrastructure included</li>
+                    </ul>
+                    <a href="training.html" class="cta-button">Watch the Free Training</a>
+                </div>
+            </div>
+
+        <!-- Testimonial -->
+        <section style="padding: 4rem 2rem 10rem; max-width: 700px; margin: 0 auto; position: relative; z-index: 1;">
+            <div class="pfaq-item glow-card" style="--glow-color: #FFD700; margin-bottom: 0; border-radius: 12px;">
+                <div style="position: relative; z-index: 2; background: rgba(0, 0, 0, 0.9); border: 0.5px solid rgba(255,255,255,0.15); border-radius: inherit; margin: 1px; padding: 2.5rem; text-align: center; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
+                    <div style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #FFD700; letter-spacing: 0.5rem;">★★★★★</div>
+                    <p style="font-size: 1.1rem; color: rgba(255,255,255,0.9); font-style: italic; line-height: 1.7; margin-bottom: 1rem;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                    <div style="font-family: 'Orbitron', sans-serif; font-size: 0.85rem; color: #14B8A6;">Client Name Here</div>
+                    <div style="font-size: 0.8rem; color: rgba(255,255,255,0.65); margin-top: 0.3rem;">Result Placeholder</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing FAQ -->
+        <style>
+            .section-title { text-align: center; font-family: 'Orbitron', sans-serif; font-size: 2.8rem; font-weight: 700; margin-bottom: 5rem; color: #ffffff; position: relative; z-index: 2; animation: glow 3s ease-in-out infinite; }
+            .pfaq-container { padding: 3rem 2rem 15rem; max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+            .pfaq-container h2 {
+                position: relative;
+            }
+            .pfaq-container h2::before {
+                content: '';
+                position: absolute;
+                inset: -30px -60px;
+                background: radial-gradient(ellipse at center, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 50%, transparent 100%);
+                filter: blur(20px);
+                z-index: -1;
+                pointer-events: none;
+            }
+            .pfaq-item {
+                --pointer-x: 50%; --pointer-y: 50%; --pointer-deg: 45deg; --proximity: 0;
+                --glow-color: #e040fb;
+                position: relative; cursor: pointer; border-radius: 12px; margin-bottom: 1.5rem;
+            }
+            .pfaq-item:nth-child(1) { --glow-color: #FFD700; }
+            .pfaq-item:nth-child(2) { --glow-color: #00e5ff; }
+            .pfaq-item:nth-child(3) { --glow-color: #76ff03; }
+            .pfaq-item:nth-child(4) { --glow-color: #ff3d00; }
+            .pfaq-item:nth-child(5) { --glow-color: #14B8A6; }
+            .pfaq-item:nth-child(6) { --glow-color: #ff4081; }
+            .pfaq-inner {
+                position: relative; z-index: 2; background: #000;
+                border: 0.5px solid rgba(255,255,255,0.15); border-radius: inherit;
+                margin: 1px; overflow: hidden; transition: border-color 0.3s ease;
+            }
+            .pfaq-q {
+                padding: 2rem; cursor: pointer; display: flex;
+                justify-content: space-between; align-items: center;
+                transition: background 0.3s ease;
+            }
+            .pfaq-q:hover { background: rgba(255,255,255,0.02); }
+            .pfaq-q h3 {
+                font-family: 'Orbitron', sans-serif; font-size: 1.1rem; font-weight: 600;
+                background: linear-gradient(135deg, #ffffff, #00ffff);
+                -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                background-clip: text; margin: 0;
+            }
+            .pfaq-toggle { font-size: 1.5rem; color: #14B8A6; transition: transform 0.3s cubic-bezier(0.4,0,0.2,1); }
+            .pfaq-toggle.active { transform: rotate(180deg); }
+            .pfaq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s cubic-bezier(0.4,0,0.2,1); }
+            .pfaq-a.active { max-height: 500px; }
+            .pfaq-a p { padding: 2rem; color: rgba(255,255,255,0.82); line-height: 1.8; font-size: 0.95rem; }
+        </style>
+        <section class="pfaq-container">
+            <h2 class="section-title"><span style="background: linear-gradient(135deg, #ffffff, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: none !important;">The Money </span><span class="scramble-word gradient-text">Questions.</span></h2>
+
+            <div class="pfaq-item glow-card">
+                <div class="pfaq-inner">
+                    <div class="pfaq-q" onclick="togglePFAQ(this)">
+                        <h3>Why 28-day billing instead of monthly?</h3>
+                        <div class="pfaq-toggle">+</div>
+                    </div>
+                    <div class="pfaq-a">
+                        <p>Monthly billing gives you 12 payments a year. 28-day billing gives you 13. That extra cycle means your team gets an extra pay period, which keeps them loyal and motivated. It also means you always know exactly how many working days you are paying for. No short months. No guessing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pfaq-item glow-card">
+                <div class="pfaq-inner">
+                    <div class="pfaq-q" onclick="togglePFAQ(this)">
+                        <h3>What if I can not afford $2,500 right now?</h3>
+                        <div class="pfaq-toggle">+</div>
+                    </div>
+                    <div class="pfaq-a">
+                        <p>Ask yourself what it is costing you to keep doing fulfillment yourself. If you are spending 20+ hours a week on tasks a trained VA could handle, that is 20 hours you are not spending on sales, strategy, and growth. Most of our clients make back the investment within the first cycle because they finally have time to close new business.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pfaq-item glow-card">
+                <div class="pfaq-inner">
+                    <div class="pfaq-q" onclick="togglePFAQ(this)">
+                        <h3>Is there a contract or can I cancel anytime?</h3>
+                        <div class="pfaq-toggle">+</div>
+                    </div>
+                    <div class="pfaq-a">
+                        <p>28-day cycles. No long-term contracts. You pay cycle by cycle. If you want to stop, you stop at the end of the current cycle. We earn your business every 28 days. The first cycle IS your trial.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pfaq-item glow-card">
+                <div class="pfaq-inner">
+                    <div class="pfaq-q" onclick="togglePFAQ(this)">
+                        <h3>Why not just hire a VA on Upwork for $5/hr?</h3>
+                        <div class="pfaq-toggle">+</div>
+                    </div>
+                    <div class="pfaq-a">
+                        <p>You can. Most of our clients already tried. They spent weeks interviewing, onboarding, and training someone who quit in 60 days. Then they did it again. That is the Redo Tax. With us, you skip all of that. We handle hiring, training, management, QA, and replacement. You get a production line, not a lottery ticket.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pfaq-item glow-card">
+                <div class="pfaq-inner">
+                    <div class="pfaq-q" onclick="togglePFAQ(this)">
+                        <h3>What is included in the price? Any hidden fees?</h3>
+                        <div class="pfaq-toggle">+</div>
+                    </div>
+                    <div class="pfaq-a">
+                        <p>Everything. VA salary, training, management, QA, payroll, benefits, backup VA, AI automation, and your Friday Pulse Report. There are no setup fees, no onboarding fees, no hidden charges. The price you see is the price you pay.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pfaq-item glow-card">
+                <div class="pfaq-inner">
+                    <div class="pfaq-q" onclick="togglePFAQ(this)">
+                        <h3>How fast will I see ROI?</h3>
+                        <div class="pfaq-toggle">+</div>
+                    </div>
+                    <div class="pfaq-a">
+                        <p>Most clients reclaim 20+ hours in the first cycle. That time goes straight back into sales, client acquisition, and strategy. One new client closed with that reclaimed time typically covers the entire cost. By cycle two, the system is paying for itself.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <!-- CTA Section -->
+        <style>
+            .cta { --pointer-x: 50%; --pointer-y: 50%; --pointer-deg: 45deg; --proximity: 0; --glow-color: #00ffff; position: relative; cursor: pointer; border-radius: 12px; max-width: 900px; margin: 0 auto 10rem; }
+            .cta-inner { position: relative; z-index: 2; background: #000000; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: inherit; padding: 5rem 3rem; text-align: center; margin: 1px; }
+            .cta h2 { font-family: 'Orbitron', sans-serif; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff; animation: glow 3s ease-in-out infinite; }
+            .cta p { color: rgba(255, 255, 255, 0.75); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7); }
+            .cta .btn-primary { display: inline-block; padding: 1.1rem 3rem; border-radius: 8px; font-weight: 700; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; border: none; text-decoration: none; background: linear-gradient(135deg, #FFFF00, #00FFFF); color: #000000; box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); }
+            .cta .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 0 25px rgba(0, 255, 255, 0.5), 0 0 50px rgba(255, 255, 0, 0.2); }
+        </style>
+        <section>
+            <div class="cta glow-card">
+                <div class="cta-inner">
+                    <h2><span style="background: linear-gradient(135deg, #ffffff, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: none !important;">Ready to Invest in</span><br><span class="scramble-word gradient-text">Growth?</span></h2>
+                    <p>See exactly how our system pays for itself in the first cycle. No guesswork. No risk. Just the math behind scaling your agency.</p>
+                    <a href="training.html" class="btn-primary">Watch the Free Training</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script>
+        // FAQ Toggle
+        function togglePFAQ(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.pfaq-toggle');
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+            document.querySelectorAll('.pfaq-a.active').forEach(el => {
+                if (el !== answer) {
+                    el.classList.remove('active');
+                    el.previousElementSibling.querySelector('.pfaq-toggle').classList.remove('active');
+                }
+            });
+        }
+
+        // Intersection Observer for Scroll Animations
+        function setupScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.pricing-card').forEach(card => {
+                observer.observe(card);
+            });
+        }
+
+
+        // ── GradientBlinds Effect (pure WebGL, no external deps) ──────────
+        function initGradientBlinds() {
+            const container = document.getElementById('gbContainer');
+            if (!container) return;
+
+            const canvas = document.createElement('canvas');
+            canvas.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;display:block;';
+            container.appendChild(canvas);
+
+            const gl = canvas.getContext('webgl', { alpha: false })
+                    || canvas.getContext('experimental-webgl', { alpha: false });
+            if (!gl) return;
+
+            // ── Shaders ────────────────────────────────────────────────────
+            const vertSrc = `
+                attribute vec2 a_pos;
+                varying vec2 vUv;
+                void main() {
+                    vUv = a_pos * 0.5 + 0.5;
+                    gl_Position = vec4(a_pos, 0.0, 1.0);
+                }
+            `;
+
+            const fragSrc = `
+                precision mediump float;
+                uniform vec2 iResolution;
+                uniform vec2 iMouse;
+                uniform float iTime;
+                varying vec2 vUv;
+
+                float rand(vec2 co) {
+                    return fract(sin(dot(co, vec2(12.9898, 78.233))) * 43758.5453);
+                }
+
+                vec3 gradCol(float t) {
+                    vec3 c0 = vec3(0.0784, 0.7216, 0.6510);
+                    vec3 c1 = vec3(0.0,    1.0,    1.0);
+                    vec3 c2 = vec3(1.0,    0.8431, 0.0);
+                    vec3 c3 = vec3(1.0,    1.0,    0.0);
+                    float tt = clamp(t, 0.0, 1.0) * 3.0;
+                    if (tt < 1.0) return mix(c0, c1, tt);
+                    if (tt < 2.0) return mix(c1, c2, tt - 1.0);
+                    return mix(c2, c3, tt - 2.0);
+                }
+
+                void main() {
+                    vec2 uv0 = vUv;
+                    float aspect = iResolution.x / iResolution.y;
+                    float angle = -0.2618;
+
+                    vec2 p = uv0 * 2.0 - 1.0;
+                    p.x *= aspect;
+                    float ca = cos(angle);
+                    float sa = sin(angle);
+                    vec2 pr = vec2(ca * p.x - sa * p.y, sa * p.x + ca * p.y);
+                    pr.x /= aspect;
+                    vec2 uv = pr * 0.5 + 0.5;
+
+                    uv.x += sin(uv.y * 6.0 + iTime * 0.3) * 0.008;
+                    uv.y += cos(uv.x * 6.0 + iTime * 0.2) * 0.008;
+
+                    vec3 base = gradCol(uv.x);
+
+                    vec2 mouseUv = iMouse / iResolution;
+                    float d = length(uv0 - mouseUv);
+                    float spot = (1.0 - 2.0 * pow(max(0.0, d / 0.6), 0.8)) * 0.85;
+
+                    float stripe = fract(uv.x * 20.0);
+
+                    vec3 col = base + vec3(spot) - vec3(stripe * 0.5);
+                    col += (rand(gl_FragCoord.xy + iTime) - 0.5) * 0.15;
+                    col = clamp(col, 0.0, 1.0);
+
+                    gl_FragColor = vec4(col, 1.0);
+                }
+            `;
+
+            // ── Compile & link ─────────────────────────────────────────────
+            const mkShader = (src, type) => {
+                const s = gl.createShader(type);
+                gl.shaderSource(s, src);
+                gl.compileShader(s);
+                return s;
+            };
+            const prog = gl.createProgram();
+            gl.attachShader(prog, mkShader(vertSrc, gl.VERTEX_SHADER));
+            gl.attachShader(prog, mkShader(fragSrc, gl.FRAGMENT_SHADER));
+            gl.linkProgram(prog);
+            if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) {
+                console.warn('GB shader link error:', gl.getProgramInfoLog(prog));
+                return;
+            }
+            gl.useProgram(prog);
+
+            // Full-screen quad (triangle strip)
+            const buf = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+            gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+            const aPos = gl.getAttribLocation(prog, 'a_pos');
+            gl.enableVertexAttribArray(aPos);
+            gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+            const uRes   = gl.getUniformLocation(prog, 'iResolution');
+            const uMouse = gl.getUniformLocation(prog, 'iMouse');
+            const uTime  = gl.getUniformLocation(prog, 'iTime');
+
+            // ── Resize ─────────────────────────────────────────────────────
+            const resize = () => {
+                const rect = container.getBoundingClientRect();
+                const dpr  = Math.min(window.devicePixelRatio || 1, 2);
+                canvas.width  = Math.max(1, Math.round(rect.width  * dpr));
+                canvas.height = Math.max(1, Math.round(rect.height * dpr));
+                gl.viewport(0, 0, canvas.width, canvas.height);
+            };
+            new ResizeObserver(resize).observe(container);
+            resize();
+
+            // ── Mouse ──────────────────────────────────────────────────────
+            let mouseX = 0.5, mouseY = 0.5;
+            window.addEventListener('mousemove', e => {
+                const rect = canvas.getBoundingClientRect();
+                if (!rect.width || !rect.height) return;
+                mouseX = (e.clientX - rect.left) / rect.width;
+                mouseY = (e.clientY - rect.top)  / rect.height;
+            });
+
+            // ── Render loop ────────────────────────────────────────────────
+            let startTime = null;
+            const tick = t => {
+                requestAnimationFrame(tick);
+                if (!startTime) startTime = t;
+                const time = (t - startTime) * 0.001;
+                gl.uniform2f(uRes,   canvas.width, canvas.height);
+                gl.uniform2f(uMouse, mouseX * canvas.width, (1.0 - mouseY) * canvas.height);
+                gl.uniform1f(uTime,  time);
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+            };
+            requestAnimationFrame(tick);
+        }
+
+        // ── Text Scramble ────────────────────────────────────────────
+        const SCRAMBLE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&';
+        function scrambleEl(el) {
+            const orig = el.textContent;
+            let step = 0;
+            const total = orig.length * 3;
+            const iv = setInterval(() => {
+                el.textContent = orig.split('').map((ch, i) => {
+                    if (ch === ' ') return ch;
+                    return i < step / 3 ? ch : SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)];
+                }).join('');
+                step++;
+                if (step > total) { el.textContent = orig; clearInterval(iv); }
+            }, 28);
+        }
+        const scrambleObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { scrambleEl(e.target); scrambleObs.unobserve(e.target); }
+            });
+        }, { threshold: 0.2 });
+        document.querySelectorAll('.scramble-word').forEach(el => scrambleObs.observe(el));
+
+        // Initialize everything when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            setupScrollAnimations();
+            initGradientBlinds();
+        });
+    </script>
+</body>
+</html>

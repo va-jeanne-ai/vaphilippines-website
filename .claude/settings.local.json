@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(file:*)",
+      "Bash(wc:*)",
+      "Bash(grep:*)",
+      "Bash(magick --version)",
+      "Bash(convert --version)",
+      "Bash(python3 -c \"from PIL import Image; print\\(''Pillow OK''\\)\")",
+      "Bash(python3:*)",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/hazelapuhin/Website/images/portrait-person-ai-robot.jpg\")",
+      "Bash(sips -Z 400 \"/Users/hazelapuhin/Website/images/For the Ones Who Try.png\" --out /tmp/ff-new.jpg)"
+    ]
+  }
+}

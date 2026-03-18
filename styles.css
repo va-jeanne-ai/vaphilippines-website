@@ -1,0 +1,74 @@
+/* ═══════════════════════════════════════════════════════════
+   Shared Styles — Virtual Assistants Philippines
+   Extracted from inline <style> blocks across all pages.
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Global Reset ───────────────────────────────────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ── Gradient Text ──────────────────────────────────────── */
+.gradient-text {
+    background: linear-gradient(135deg, #ffffff, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ── Glow Animation ─────────────────────────────────────── */
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 20px rgba(20, 184, 166, 0.12), 0 0 40px rgba(20, 184, 166, 0.06); }
+    50%       { text-shadow: 0 0 30px rgba(20, 184, 166, 0.22), 0 0 60px rgba(20, 184, 166, 0.10); }
+}
+
+/* ── Glow Card System ───────────────────────────────────── */
+.gc-mesh-border {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    z-index: 1;
+    border: 2.5px solid transparent;
+    pointer-events: none;
+    background:
+        linear-gradient(rgb(255 255 255 / 0%) 0% 100%) border-box,
+        radial-gradient(at var(--pointer-x) var(--pointer-y), var(--glow-color) 0px, transparent 45%) border-box,
+        radial-gradient(at 80% 20%, var(--glow-color) 0px, transparent 55%) border-box,
+        radial-gradient(at 20% 80%, var(--glow-color) 0px, transparent 55%) border-box,
+        radial-gradient(at 50% 0%, var(--glow-color) 0px, transparent 60%) border-box,
+        radial-gradient(at 50% 100%, var(--glow-color) 0px, transparent 60%) border-box,
+        linear-gradient(var(--glow-color) 0 100%) border-box;
+    opacity: var(--proximity);
+    mask-image: conic-gradient(from var(--pointer-deg) at center, black 20%, transparent 35%, transparent 65%, black 80%);
+    -webkit-mask-image: conic-gradient(from var(--pointer-deg) at center, black 20%, transparent 35%, transparent 65%, black 80%);
+    transition: opacity 0.3s ease-out;
+}
+
+.gc-glow {
+    position: absolute;
+    inset: -25px;
+    pointer-events: none;
+    z-index: 1;
+    border-radius: inherit;
+    mask-image: conic-gradient(from var(--pointer-deg) at center, black 5%, transparent 15%, transparent 85%, black 95%);
+    -webkit-mask-image: conic-gradient(from var(--pointer-deg) at center, black 5%, transparent 15%, transparent 85%, black 95%);
+    opacity: var(--proximity);
+    mix-blend-mode: plus-lighter;
+    transition: opacity 0.3s ease-out;
+}
+
+.gc-glow::before {
+    content: "";
+    position: absolute;
+    inset: 25px;
+    border-radius: inherit;
+    box-shadow:
+        inset 0 0 0 1px var(--glow-color),
+        inset 0 0 3px 1px var(--glow-color),
+        inset 0 0 8px 2px var(--glow-color),
+        0 0 3px 1px var(--glow-color),
+        0 0 8px 2px var(--glow-color),
+        0 0 15px 3px var(--glow-color);
+}

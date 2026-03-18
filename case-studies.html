@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Virtual Assistants Philippines</title>
+    <meta name="description" content="Real results from SEO agencies using Virtual Assistants Philippines. See how our clients scaled revenue, cut costs, and reclaimed time.">
+    <meta property="og:title" content="Case Studies - Virtual Assistants Philippines">
+    <meta property="og:description" content="Real results from SEO agencies using Virtual Assistants Philippines. See how our clients scaled revenue, cut costs, and reclaimed time.">
+    <meta property="og:image" content="https://virtualassistantsph.com/images/va-philippines-logo.png">
+    <meta property="og:url" content="https://virtualassistantsph.com/case-studies.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/va-philippines-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/va-philippines-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>if('scrollRestoration' in history) history.scrollRestoration='manual'; window.scrollTo(0,0);</script>
+    <!-- Universal Nav & Footer -->
+    <script src="components.js" defer></script>
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* ── Fluid background canvas ── */
+        #liquid-bg {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        main {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ── HERO SECTION ── */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 40px 80px;
+            position: relative;
+            animation: fadeUp 0.9s ease-out forwards;
+        }
+        .hero-section::after {
+            content: '';
+            position: absolute; bottom: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 60%; height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(20,184,166,0.4), rgba(0,255,255,0.3), rgba(255,215,0,0.15), transparent);
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(20,184,166,0.12);
+            border: 1px solid rgba(20,184,166,0.35);
+            color: #14B8A6;
+            font-size: 0.72rem;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 0.4rem 1.1rem;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+        }
+        .hero-section h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2.2rem, 5.5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            color: #ffffff;
+            letter-spacing: 2px;
+            animation: glow 3s ease-in-out infinite;
+        }
+        .hero-section > p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 700px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7);
+            margin-bottom: 3rem;
+        }
+        .hero-scroll-hint {
+            display: flex; flex-direction: column; align-items: center; gap: 6px;
+            color: rgba(255,255,255,0.55); font-size: 0.7rem; letter-spacing: 3px;
+            text-transform: uppercase; animation: bounce 2.2s ease-in-out infinite;
+        }
+        .hero-scroll-hint svg { width: 22px; height: 22px; opacity: 0.45; }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); opacity: 0.5; }
+            50%       { transform: translateY(10px); opacity: 0.9; }
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ═══════════════════════════════════════════════════════
+           HORIZONTAL SCROLL SECTIONS
+        ═══════════════════════════════════════════════════════ */
+
+        .cs-section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .cs-section[data-accent="teal"] { --accent: #14B8A6; --accent-rgb: 20, 184, 166; }
+        .cs-section[data-accent="cyan"] { --accent: #00FFFF; --accent-rgb: 0, 255, 255; }
+        .cs-section[data-accent="gold"] { --accent: #FFD700; --accent-rgb: 255, 215, 0; }
+
+        .cs-header {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 72px 4vw 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+            background: rgba(0,0,0,0.90);
+            backdrop-filter: blur(20px);
+        }
+        .cs-num {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.6rem; font-weight: 900;
+            color: var(--accent); letter-spacing: 4px;
+            text-transform: uppercase; opacity: 0.75; flex-shrink: 0;
+        }
+        .cs-title-label {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.95rem; font-weight: 700;
+            color: #bbbbbb;
+            text-shadow: none;
+            flex-shrink: 0;
+        }
+        .cs-client-label {
+            font-size: 0.72rem; color: rgba(255,255,255,0.8);
+            font-weight: 400; margin-left: auto;
+        }
+        .cs-viewport {
+            flex: 1; overflow: hidden; position: relative;
+        }
+        .cs-viewport::after {
+            content: '';
+            position: absolute; top: 0; right: 0; bottom: 0; width: 100px;
+            background: linear-gradient(to left, rgba(0,0,0,0.55), transparent);
+            pointer-events: none; z-index: 2;
+        }
+
+        .cs-track {
+            display: flex; gap: 1.5rem; height: 100%;
+            padding: 2rem 4vw; will-change: transform;
+        }
+        .cs-track-spacer {
+            flex-shrink: 0; width: 10vw;
+        }
+
+        .cs-card {
+            width: 42vw;
+            height: 75%;
+            flex-shrink: 0;
+            border-radius: 18px;
+            padding: 2rem 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            border: 1px solid rgba(255,255,255,0.07);
+            background: rgba(0,0,0,0.90);
+            backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+        }
+        .cs-card::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(135deg, var(--card-tint, rgba(20,184,166,0.04)), transparent 65%);
+            pointer-events: none; border-radius: inherit;
+        }
+        .cs-card::after {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; height: 2px;
+            background: linear-gradient(90deg, transparent, var(--card-line, var(--accent)), transparent);
+            border-radius: 18px 18px 0 0; opacity: 0.6;
+        }
+
+        .cs-card--overview   { --card-tint: rgba(var(--accent-rgb), 0.06); --card-line: var(--accent); }
+        .cs-card--challenge  { --card-tint: rgba(255,107,107,0.05); --card-line: #FF6B6B; }
+        .cs-card--solution   { --card-tint: rgba(20,184,166,0.05); --card-line: #14B8A6; }
+        .cs-card--results    { --card-tint: rgba(255,215,0,0.05); --card-line: #FFD700; }
+        .cs-card--testimonial { --card-tint: rgba(var(--accent-rgb), 0.04); --card-line: var(--accent); }
+
+        .cs-tag {
+            display: flex; align-items: center; gap: 0.55rem; margin-bottom: 1.6rem;
+        }
+        .cs-tag-dot {
+            width: 6px; height: 6px; border-radius: 50%;
+            background: currentColor; box-shadow: 0 0 8px currentColor; flex-shrink: 0;
+        }
+        .cs-tag-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.72rem; font-weight: 700; letter-spacing: 4px; text-transform: uppercase;
+        }
+
+        .cs-card--overview   .cs-tag { color: var(--accent); }
+        .cs-card--challenge  .cs-tag { color: #FF6B6B; }
+        .cs-card--solution   .cs-tag { color: #14B8A6; }
+        .cs-card--results    .cs-tag { color: #FFD700; }
+        .cs-card--testimonial .cs-tag { color: var(--accent); }
+
+        .cs-bg-number {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(5rem, 10vw, 9rem); font-weight: 900; line-height: 1;
+            color: rgba(var(--accent-rgb), 0.08);
+            position: absolute; top: 1.5rem; right: 2rem;
+            pointer-events: none; user-select: none;
+        }
+        .cs-overview-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1.4rem, 2.8vw, 2.4rem); font-weight: 900;
+            color: var(--accent); text-shadow: 0 0 24px rgba(var(--accent-rgb), 0.4);
+            line-height: 1.25; margin-bottom: 0.5rem;
+        }
+        .cs-overview-client {
+            font-size: 0.75rem; color: rgba(255,255,255,0.8);
+            text-transform: uppercase; letter-spacing: 2.5px; font-weight: 600; margin-bottom: 2.5rem;
+        }
+        .cs-metrics { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+        .cs-metric {
+            background: rgba(0,0,0,0.45); border: 1px solid rgba(var(--accent-rgb), 0.2);
+            border-radius: 12px; padding: 1.1rem 1.5rem; text-align: center; min-width: 100px;
+        }
+        .cs-metric-value {
+            display: block; font-family: 'Orbitron', sans-serif;
+            font-size: 1.6rem; font-weight: 900;
+            background: linear-gradient(135deg, var(--accent), #FFFF00);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .cs-metric-label {
+            display: block; font-size: 0.62rem; color: rgba(255,255,255,0.8);
+            text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0.3rem;
+        }
+
+        .cs-card-heading {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1.1rem, 2vw, 1.7rem); font-weight: 700;
+            margin-bottom: 1.5rem; line-height: 1.3;
+        }
+        .cs-card--challenge .cs-card-heading { color: #FF9A9A; text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7); }
+        .cs-card--solution  .cs-card-heading { color: #5CDBC8; text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7); }
+        .cs-card--results   .cs-card-heading { color: #FFE44D; text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7); }
+
+        .cs-card-body {
+            font-size: clamp(0.82rem, 1.3vw, 0.96rem); color: #c8c8c8; line-height: 1.9; max-width: 640px;
+        }
+
+        .cs-results-list { list-style: none; margin-top: 0.25rem; display: flex; flex-direction: column; gap: 0.85rem; }
+        .cs-results-list li {
+            display: flex; align-items: flex-start; gap: 0.85rem;
+            font-size: clamp(0.8rem, 1.3vw, 0.95rem); color: #d0d0d0; line-height: 1.65;
+        }
+        .cs-results-list li::before {
+            content: ''; width: 7px; height: 7px; border-radius: 50%;
+            background: #FFD700; box-shadow: 0 0 10px rgba(255,215,0,0.8);
+            flex-shrink: 0; margin-top: 0.45rem;
+        }
+
+        .cs-quote-mark {
+            font-size: 4.5rem; line-height: 1; font-family: Georgia, serif;
+            color: rgba(var(--accent-rgb), 0.22); margin-bottom: -1rem;
+        }
+        .cs-quote-text {
+            font-size: clamp(0.88rem, 1.5vw, 1.05rem); line-height: 1.95;
+            color: #e0e0e0; font-style: italic; max-width: 680px; margin-bottom: 2rem;
+        }
+        .cs-quote-attr { display: flex; align-items: center; gap: 0.8rem; }
+        .cs-quote-line {
+            width: 32px; height: 2px; background: var(--accent);
+            box-shadow: 0 0 8px rgba(var(--accent-rgb), 0.6);
+        }
+        .cs-quote-name {
+            font-family: 'Orbitron', sans-serif; font-size: 0.65rem; font-weight: 700;
+            color: var(--accent); letter-spacing: 2.5px; text-transform: uppercase;
+        }
+
+        .cs-footer {
+            flex-shrink: 0; height: 64px;
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: center; gap: 10px;
+            padding: 0 4vw;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(8px);
+        }
+        .cs-footer-main {
+            display: flex; align-items: center; justify-content: center;
+            gap: 1.2rem; width: 100%;
+        }
+        .cs-study-num {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.52rem; font-weight: 900;
+            color: var(--accent); letter-spacing: 3px;
+            text-transform: uppercase; opacity: 0.7; flex-shrink: 0;
+        }
+        .cs-footer-divider {
+            width: 1px; height: 14px;
+            background: rgba(255,255,255,0.12); flex-shrink: 0;
+        }
+        .cs-steps {
+            display: flex; align-items: center; gap: 0;
+        }
+        .cs-step {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.65rem; font-weight: 700;
+            letter-spacing: 2.5px; text-transform: uppercase;
+            color: rgba(255,255,255,0.22);
+            padding: 4px 10px;
+            border-radius: 3px;
+            transition: color 0.25s, text-shadow 0.25s, background 0.25s;
+            cursor: default; white-space: nowrap;
+        }
+        .cs-step.active {
+            color: var(--accent);
+            text-shadow: 0 0 12px rgba(var(--accent-rgb), 0.8);
+            background: rgba(var(--accent-rgb), 0.08);
+        }
+        .cs-step-sep {
+            color: rgba(255,255,255,0.1);
+            font-size: 0.55rem;
+            padding: 0 2px;
+            flex-shrink: 0;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.8); border-top: 2px solid rgba(20,184,166,0.3);
+            padding: 40px; text-align: center; color: #e0e0e0; position: relative; z-index: 10;
+        }
+        .footer-content { max-width: 1200px; margin: 0 auto; }
+        .footer-text { margin-bottom: 20px; font-size: 14px; }
+        .footer-links { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        .footer-links a { text-decoration: none; color: #14B8A6; transition: all 0.3s; font-size: 14px; }
+        .footer-links a:hover { color: #00FFFF; text-shadow: 0 0 10px rgba(0,255,255,0.6); }
+
+        @media (max-width: 1024px) { .cs-card { width: 56vw; } }
+        @media (max-width: 768px) {
+            .cs-card { width: 80vw; padding: 2rem 1.75rem; }
+            .cs-header { padding: 82px 1.5rem 14px; gap: 0.6rem; }
+            .cs-title-label { font-size: 0.7rem; }
+            .cs-client-label { display: none; }
+            .cs-track { padding: 1.5rem; gap: 1rem; }
+            .hero-section { padding: 100px 24px 60px; }
+        }
+        @media (max-width: 480px) { .cs-card { width: 92vw; padding: 1.5rem; } }
+
+        /* ── Case Study CTA ────────────────────────────────── */
+        .cta-section {
+            position: relative;
+            z-index: 10;
+            padding: 14rem 2rem;
+        }
+
+        .cta-card {
+            --pointer-x: 50%;
+            --pointer-y: 50%;
+            --pointer-deg: 45deg;
+            --proximity: 0;
+            --glow-color: #00ffff;
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .cta-card__border {
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            z-index: 1;
+            border: 2.5px solid transparent;
+            pointer-events: none;
+            background:
+                linear-gradient(#000000 0 100%) padding-box,
+                linear-gradient(rgb(255 255 255 / 0%) 0% 100%) border-box,
+                radial-gradient(at var(--pointer-x) var(--pointer-y), var(--glow-color) 0px, transparent 45%) border-box,
+                radial-gradient(at 80% 20%, var(--glow-color) 0px, transparent 55%) border-box,
+                radial-gradient(at 20% 80%, var(--glow-color) 0px, transparent 55%) border-box,
+                radial-gradient(at 50% 0%, var(--glow-color) 0px, transparent 60%) border-box,
+                radial-gradient(at 50% 100%, var(--glow-color) 0px, transparent 60%) border-box,
+                linear-gradient(var(--glow-color) 0 100%) border-box;
+            opacity: var(--proximity);
+            mask-image: conic-gradient(from var(--pointer-deg) at center, black 20%, transparent 35%, transparent 65%, black 80%);
+            -webkit-mask-image: conic-gradient(from var(--pointer-deg) at center, black 20%, transparent 35%, transparent 65%, black 80%);
+            transition: opacity 0.3s ease-out;
+        }
+
+        .cta-card__glow {
+            position: absolute;
+            inset: -25px;
+            pointer-events: none;
+            z-index: 1;
+            border-radius: inherit;
+            mask-image: conic-gradient(from var(--pointer-deg) at center, black 5%, transparent 15%, transparent 85%, black 95%);
+            -webkit-mask-image: conic-gradient(from var(--pointer-deg) at center, black 5%, transparent 15%, transparent 85%, black 95%);
+            opacity: var(--proximity);
+            mix-blend-mode: plus-lighter;
+            transition: opacity 0.3s ease-out;
+        }
+
+        .cta-card__glow::before {
+            content: "";
+            position: absolute;
+            inset: 25px;
+            border-radius: inherit;
+            box-shadow:
+                inset 0 0 0 1px var(--glow-color),
+                inset 0 0 3px 1px var(--glow-color),
+                inset 0 0 8px 2px var(--glow-color),
+                0 0 3px 1px var(--glow-color),
+                0 0 8px 2px var(--glow-color),
+                0 0 15px 3px var(--glow-color);
+        }
+
+        .cta-card__inner {
+            position: relative;
+            z-index: 2;
+            background: #000000;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: inherit;
+            padding: 5rem 3rem;
+            text-align: center;
+            margin: 1px;
+            height: calc(100% - 2px);
+        }
+
+        .cta-card__inner h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1.6rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        .cta-card__inner p {
+            color: rgba(255, 255, 255, 0.75);
+            text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-card__btn {
+            display: inline-block;
+            padding: 1.1rem 3rem;
+            border-radius: 8px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: none;
+            color: #000000;
+            background: linear-gradient(135deg, #FFFF00, #00FFFF);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .cta-card__btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.5), 0 0 50px rgba(255, 255, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- WebGL fluid background -->
+    <div id="liquid-bg"></div>
+
+    <main>
+
+        <!-- ════════════════ HERO ════════════════ -->
+        <section class="hero-section">
+            <div class="hero-badge">Client Success Stories</div>
+            <h1><span style="background: linear-gradient(135deg, #ffffff, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Real Numbers.</span><br>Real <span class="scramble-word gradient-text">Agency</span> <span class="gradient-text">Owners.</span></h1>
+            <p>Three agencies. Three transformations.<br>See what happens when you stop managing and start scaling.</p>
+            <div class="hero-scroll-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- ════════════════ CASE STUDY 01 ════════════════ -->
+        <section class="cs-section" data-accent="teal" id="cs-1">
+            <div class="cs-header">
+                <span class="cs-num">CS · 01 / 03</span>
+                <span class="cs-title-label">From 1 Company to 3 Companies</span>
+                <span class="cs-client-label">Local Whitelabel SEO Agency · USA</span>
+            </div>
+            <div class="cs-viewport">
+                <div class="cs-track" id="cs1-track">
+                    <div class="cs-card cs-card--overview">
+                        <div class="cs-bg-number">01</div>
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Overview</span></div>
+                        <div class="cs-overview-title">From 1 Company<br>to 3 Companies</div>
+                        <div class="cs-overview-client">Local Whitelabel SEO Agency · USA</div>
+                        <div class="cs-metrics">
+                            <div class="cs-metric"><span class="cs-metric-value">3×</span><span class="cs-metric-label">Companies</span></div>
+                            <div class="cs-metric"><span class="cs-metric-value">$1M+</span><span class="cs-metric-label">Annual Revenue</span></div>
+                            <div class="cs-metric"><span class="cs-metric-value">30%</span><span class="cs-metric-label">Cost Reduction</span></div>
+                        </div>
+                    </div>
+                    <div class="cs-card cs-card--challenge">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">The Challenge</span></div>
+                        <div class="cs-card-heading">Drowning in<br>His Own Business</div>
+                        <div class="cs-card-body">He started with one company doing local SEO and every part of the operation landed on his shoulders. He was doing everything himself: client delivery, admin, fulfillment. He tried hiring operations managers multiple times. They kept quitting, leaving him right back where he started. Overwhelmed, stuck, paying the "Redo Tax" on every failed hire.</div>
+                    </div>
+                    <div class="cs-card cs-card--solution">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Our Solution</span></div>
+                        <div class="cs-card-heading">A Team That<br>Scaled With Him</div>
+                        <div class="cs-card-body">We deployed 2 production-ready VAs already trained in his processes. Zero ramp-up time on his end. As the business grew, we scaled to 15+ VAs in three months and promoted the highest-performing one to manage the entire system.<br><br>Then we did something even better: we used our AI infrastructure to automate many of those VA roles, increasing his margins even further. The evolution from labor to automation.</div>
+                    </div>
+                    <div class="cs-card cs-card--results">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Results</span></div>
+                        <div class="cs-card-heading">Tripled the Business</div>
+                        <ul class="cs-results-list">
+                            <li>Grew from 1 company to 3 companies</li>
+                            <li>Achieved $1M+ in annual revenue</li>
+                            <li>Reduced operational costs by 30%</li>
+                            <li>Scaled the business without scaling the chaos</li>
+                            <li>Now targeting $5M revenue with AI automation support</li>
+                            <li>VAPH now operates as embedded strategic partner with performance-based revenue share</li>
+                        </ul>
+                    </div>
+                    <div class="cs-card cs-card--testimonial">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Client Testimonial</span></div>
+                        <div class="cs-quote-mark">"</div>
+                        <div class="cs-quote-text">It's given me back the time that I would have been doing a lot of fulfillment activities and duties of the business, which allows me to work more on strategy, product development, marketing and sales. Virtual Assistants Philippines delivers high-quality support with exceptional talent, integrity, and reliability. They are just fantastic!</div>
+                        <div class="cs-quote-attr"><div class="cs-quote-line"></div><span class="cs-quote-name">Bradley · USA</span></div>
+                    </div>
+                    <div class="cs-track-spacer"></div>
+                </div>
+            </div>
+            <div class="cs-footer">
+                <div class="cs-footer-main">
+                    <span class="cs-study-num">CS 01 / 03</span>
+                    <div class="cs-footer-divider"></div>
+                    <div class="cs-steps" id="cs1-steps">
+                        <span class="cs-step active">Overview</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Challenge</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Solution</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Results</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Testimonial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════ CASE STUDY 02 ════════════════ -->
+        <section class="cs-section" data-accent="cyan" id="cs-2">
+            <div class="cs-header">
+                <span class="cs-num">CS · 02 / 03</span>
+                <span class="cs-title-label">From Chaos to Clarity</span>
+                <span class="cs-client-label">Mid-Size Solo SEO Agency · UK</span>
+            </div>
+            <div class="cs-viewport">
+                <div class="cs-track" id="cs2-track">
+                    <div class="cs-card cs-card--overview">
+                        <div class="cs-bg-number">02</div>
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Overview</span></div>
+                        <div class="cs-overview-title">From Chaos<br>to Clarity</div>
+                        <div class="cs-overview-client">Mid-Size Solo SEO Agency · UK</div>
+                        <div class="cs-metrics">
+                            <div class="cs-metric"><span class="cs-metric-value">40%</span><span class="cs-metric-label">Time Reclaimed</span></div>
+                            <div class="cs-metric"><span class="cs-metric-value">10h+</span><span class="cs-metric-label">Saved / Week</span></div>
+                            <div class="cs-metric"><span class="cs-metric-value">50%</span><span class="cs-metric-label">Faster Content</span></div>
+                        </div>
+                    </div>
+                    <div class="cs-card cs-card--challenge">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">The Challenge</span></div>
+                        <div class="cs-card-heading">The Solopreneur<br>Ceiling</div>
+                        <div class="cs-card-body">Running multiple client projects alone meant every hour was accounted for, and barely. Content creation and outreach alone consumed 40% of his working week, leaving almost nothing left for growth.<br><br>Client delivery and reporting were done manually. He wanted to scale but could not find the time to hire, train, or manage more people. A growth ceiling with no obvious exit.</div>
+                    </div>
+                    <div class="cs-card cs-card--solution">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Our Solution</span></div>
+                        <div class="cs-card-heading">An Extension<br>of His Team</div>
+                        <div class="cs-card-body">We placed 1 dedicated VA to handle content creation and admin, taking the repetitive, time-draining work completely off his plate. We also took on all project management responsibilities, bringing structure across his entire client roster.<br><br>As his workload grew, we brought in 2 additional support VAs to keep pace with new clients. He never did a single interview.</div>
+                    </div>
+                    <div class="cs-card cs-card--results">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Results</span></div>
+                        <div class="cs-card-heading">Time, Freedom<br>&amp; Growth</div>
+                        <ul class="cs-results-list">
+                            <li>Reclaimed 40% of his working time</li>
+                            <li>Took a full month off in Asia while the business kept running</li>
+                            <li>Content creation time cut in half</li>
+                            <li>Client reporting fully automated, saving 10+ hours per week</li>
+                            <li>Took on more clients without adding any direct headcount</li>
+                            <li>Transformed from solopreneur chaos to a scalable, structured operation</li>
+                        </ul>
+                    </div>
+                    <div class="cs-card cs-card--testimonial">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Client Testimonial</span></div>
+                        <div class="cs-quote-mark">"</div>
+                        <div class="cs-quote-text">It's been a great help getting you and your team involved in my day-to-day operations. I honestly can't imagine going back to doing it all alone.</div>
+                        <div class="cs-quote-attr"><div class="cs-quote-line"></div><span class="cs-quote-name">Agency Owner · UK</span></div>
+                    </div>
+                    <div class="cs-track-spacer"></div>
+                </div>
+            </div>
+            <div class="cs-footer">
+                <div class="cs-footer-main">
+                    <span class="cs-study-num">CS 02 / 03</span>
+                    <div class="cs-footer-divider"></div>
+                    <div class="cs-steps" id="cs2-steps">
+                        <span class="cs-step active">Overview</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Challenge</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Solution</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Results</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Testimonial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════ CASE STUDY 03 ════════════════ -->
+        <section class="cs-section" data-accent="gold" id="cs-3">
+            <div class="cs-header">
+                <span class="cs-num">CS · 03 / 03</span>
+                <span class="cs-title-label">Scaling Without Hiring Chaos</span>
+                <span class="cs-client-label">Growing SEO Agency · Canada</span>
+            </div>
+            <div class="cs-viewport">
+                <div class="cs-track" id="cs3-track">
+                    <div class="cs-card cs-card--overview">
+                        <div class="cs-bg-number">03</div>
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Overview</span></div>
+                        <div class="cs-overview-title">Scaling Without<br>Hiring Chaos</div>
+                        <div class="cs-overview-client">Growing SEO Agency · Canada</div>
+                        <div class="cs-metrics">
+                            <div class="cs-metric"><span class="cs-metric-value">0</span><span class="cs-metric-label">Training Time</span></div>
+                            <div class="cs-metric"><span class="cs-metric-value">2</span><span class="cs-metric-label">VAs Deployed Fast</span></div>
+                            <div class="cs-metric"><span class="cs-metric-value">100%</span><span class="cs-metric-label">Fully Managed</span></div>
+                        </div>
+                    </div>
+                    <div class="cs-card cs-card--challenge">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">The Challenge</span></div>
+                        <div class="cs-card-heading">A Major Win With<br>No Team to Deliver</div>
+                        <div class="cs-card-body">They landed a major client, the kind of account that could define the agency's next chapter. But with it came an immediate problem. They needed to scale fast, without the time or appetite for traditional hiring.<br><br>Full-time employees meant onboarding delays, payroll risk, and management overhead. They needed continuity and rapid deployment. Not a 6-week recruitment process.</div>
+                    </div>
+                    <div class="cs-card cs-card--solution">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Our Solution</span></div>
+                        <div class="cs-card-heading">Ready to Deliver<br>From Day One</div>
+                        <div class="cs-card-body">We deployed 2 fully managed Virtual Assistants immediately. No onboarding required on their end. We handled everything. Selection, training, management, and quality control.<br><br>The highest-performing VA was quickly promoted to team lead. We layered in custom AI automation for QA checks and client reporting, giving the agency professional-grade output with zero operational overhead.</div>
+                    </div>
+                    <div class="cs-card cs-card--results">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Results</span></div>
+                        <div class="cs-card-heading">Scaled Without<br>the Headaches</div>
+                        <ul class="cs-results-list">
+                            <li>Delivered on a major client from day one without hiring a single person directly</li>
+                            <li>Zero training time invested by the client</li>
+                            <li>No payroll complexity. Fully managed on our end</li>
+                            <li>Built-in continuity. If a VA did not work out, we replaced them instantly</li>
+                            <li>Opened capacity to take on additional clients as operations stabilized</li>
+                        </ul>
+                    </div>
+                    <div class="cs-card cs-card--testimonial">
+                        <div class="cs-tag"><span class="cs-tag-dot"></span><span class="cs-tag-text">Client Testimonial</span></div>
+                        <div class="cs-quote-mark">"</div>
+                        <div class="cs-quote-text">We needed to scale fast without the hiring headaches. Virtual Assistants Philippines gave us a complete team without the recruitment and management burden. It was exactly what we needed, exactly when we needed it.</div>
+                        <div class="cs-quote-attr"><div class="cs-quote-line"></div><span class="cs-quote-name">Agency Owner · Canada</span></div>
+                    </div>
+                    <div class="cs-track-spacer"></div>
+                </div>
+            </div>
+            <div class="cs-footer">
+                <div class="cs-footer-main">
+                    <span class="cs-study-num">CS 03 / 03</span>
+                    <div class="cs-footer-divider"></div>
+                    <div class="cs-steps" id="cs3-steps">
+                        <span class="cs-step active">Overview</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Challenge</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Solution</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Results</span>
+                        <span class="cs-step-sep">·</span>
+                        <span class="cs-step">Testimonial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <style>
+            .section-title { text-align: center; font-family: 'Orbitron', sans-serif; font-size: 2.8rem; font-weight: 700; margin-bottom: 5rem; color: #ffffff; position: relative; z-index: 2; animation: glow 3s ease-in-out infinite; }
+            .faq { padding: 6rem 0 15rem; }
+            .faq-container { max-width: 900px; margin: 0 auto; }
+            .faq-item { --pointer-x: 50%; --pointer-y: 50%; --pointer-deg: 45deg; --proximity: 0; --glow-color: #e040fb; position: relative; cursor: pointer; border-radius: 12px; margin-bottom: 1.5rem; }
+            .faq-item:nth-child(1) { --glow-color: #e040fb; }
+            .faq-item:nth-child(2) { --glow-color: #00e5ff; }
+            .faq-item:nth-child(3) { --glow-color: #76ff03; }
+            .faq-item:nth-child(4) { --glow-color: #ff3d00; }
+            .faq-item:nth-child(5) { --glow-color: #FFD700; }
+            .faq-item:nth-child(6) { --glow-color: #ff6d00; }
+            .faq-item-inner { position: relative; z-index: 2; background: #000000; border: 0.5px solid rgba(255, 255, 255, 0.15); border-radius: inherit; margin: 1px; overflow: hidden; transition: border-color 0.3s ease; }
+            .faq-question { padding: 2rem; background: transparent; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; justify-content: space-between; align-items: center; }
+            .faq-question:hover { background: rgba(255, 255, 255, 0.02); }
+            .faq-question h3 { font-family: 'Orbitron', sans-serif; font-size: 1.1rem; font-weight: 600; color: #00ffff; margin: 0; }
+            .faq-toggle { font-size: 1.5rem; color: #14B8A6; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+            .faq-toggle.active { transform: rotate(180deg); }
+            .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+            .faq-answer.active { max-height: 500px; }
+            .faq-answer p { padding: 2rem; color: rgba(255, 255, 255, 0.82); line-height: 1.8; }
+        </style>
+        <section class="faq">
+            <div class="container">
+                <h2 class="section-title"><span style="background: linear-gradient(135deg, #ffffff, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: none !important;">Before You </span><span class="scramble-word gradient-text">Decide.</span></h2>
+                <div class="faq-container">
+                    <div class="faq-item glow-card">
+                        <div class="faq-item-inner">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>Are these results typical?</h3>
+                                <div class="faq-toggle">+</div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Every agency is different, but the pattern is consistent: owners reclaim 20+ hours per week, client retention improves because delivery gets more reliable, and growth becomes possible because the owner is no longer the bottleneck. The speed of results depends on how fast you delegate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item glow-card">
+                        <div class="faq-item-inner">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>How quickly can I expect to see results?</h3>
+                                <div class="faq-toggle">+</div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Most clients feel the difference within the first 28-day cycle. Your VA is deployed within 7–14 days, and by the end of cycle one you have hardened SOPs, a trained team member handling fulfillment, and a Friday Pulse Report showing exactly what got done. The time you reclaim in week one is time you can reinvest in sales immediately.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item glow-card">
+                        <div class="faq-item-inner">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>My agency is smaller than Bradley's. Will this still work?</h3>
+                                <div class="faq-toggle">+</div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes. Our system scales in both directions. If you are doing $25K+/mo and spending your time on fulfillment instead of growth, you are the exact profile that benefits most. You do not need to be a seven-figure agency to start. You need to be ready to stop being the bottleneck.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item glow-card">
+                        <div class="faq-item-inner">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>What if my agency has different needs than these case studies?</h3>
+                                <div class="faq-toggle">+</div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Every deployment starts with an onboarding audit specific to your agency. We do not copy-paste a template. We study your workflows, identify bottlenecks, and build SOPs tailored to how your agency operates. The system adapts to you, not the other way around.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item glow-card">
+                        <div class="faq-item-inner">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>Can I start with one VA and scale later?</h3>
+                                <div class="faq-toggle">+</div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>That is exactly how most clients start. One VA, one set of workflows, one 28-day cycle to prove the system works. Once you see the results, you scale from there. Bradley started with VAs and grew to 3 companies. The system is designed to grow with you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item glow-card">
+                        <div class="faq-item-inner">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>How do I know if I am ready for this?</h3>
+                                <div class="faq-toggle">+</div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>If you are doing $25K+/mo, spending hours on tasks a trained VA could handle, and you know you could grow if you just had more time — you are ready. Book a strategy call and we will map out exactly what delegation looks like for your agency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function toggleFAQ(element) {
+                const answer = element.nextElementSibling;
+                const toggle = element.querySelector('.faq-toggle');
+                answer.classList.toggle('active');
+                toggle.classList.toggle('active');
+                document.querySelectorAll('.faq-answer.active').forEach(el => {
+                    if (el !== answer) {
+                        el.classList.remove('active');
+                        el.previousElementSibling.querySelector('.faq-toggle').classList.remove('active');
+                    }
+                });
+            }
+        </script>
+
+        <!-- CTA Section -->
+        <style>
+            .cta { --pointer-x: 50%; --pointer-y: 50%; --pointer-deg: 45deg; --proximity: 0; --glow-color: #00ffff; position: relative; cursor: pointer; border-radius: 12px; max-width: 900px; margin: 0 auto 10rem; }
+            .cta-inner { position: relative; z-index: 2; background: #000000; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: inherit; padding: 5rem 3rem; text-align: center; margin: 1px; }
+            .cta h2 { font-family: 'Orbitron', sans-serif; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff; animation: glow 3s ease-in-out infinite; }
+            .cta p { color: rgba(255, 255, 255, 0.75); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7); }
+            .cta .btn-primary { display: inline-block; padding: 1.1rem 3rem; border-radius: 8px; font-weight: 700; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; border: none; text-decoration: none; background: linear-gradient(135deg, #FFFF00, #00FFFF); color: #000000; box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); }
+            .cta .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 0 25px rgba(0, 255, 255, 0.5), 0 0 50px rgba(255, 255, 0, 0.2); }
+        </style>
+        <section>
+            <div class="cta glow-card">
+                <div class="cta-inner">
+                    <h2><span style="background: linear-gradient(135deg, #ffffff, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: none !important;">Want Results Like</span><br><span class="scramble-word gradient-text">These?</span></h2>
+                    <p>See the exact system that helped agency owners reclaim 20+ hours per week and scale without scaling the chaos. No pitch deck. Just proof.</p>
+                    <a href="training.html" class="btn-primary">Watch the Free Training</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Three.js (required by LiquidEther) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+    <!-- LiquidEther — WebGL fluid background (ported from React to vanilla JS) -->
+    <script>
+    (function () {
+        'use strict';
+
+        var COLORS      = ['#00FFFF', '#14B8A6', '#00ffcc'];
+        var CFG = {
+            mouseForce: 25, cursorSize: 120, resolution: 0.5,
+            isViscous: false, viscous: 30, iterationsViscous: 32,
+            iterationsPoisson: 32, dt: 0.016, BFECC: true, isBounce: false,
+            autoDemo: true, autoSpeed: 0.38, autoIntensity: 2.2,
+            takeoverDuration: 0.25, autoResumeDelay: 1500, autoRampDuration: 0.6
+        };
+
+        /* ── Palette texture ────────────────────────────────────── */
+        function makePaletteTexture(stops) {
+            var arr = (Array.isArray(stops) && stops.length > 0)
+                ? (stops.length === 1 ? [stops[0], stops[0]] : stops)
+                : ['#ffffff', '#ffffff'];
+            var w = arr.length;
+            var data = new Uint8Array(w * 4);
+            for (var i = 0; i < w; i++) {
+                var c = new THREE.Color(arr[i]);
+                data[i*4]   = Math.round(c.r * 255);
+                data[i*4+1] = Math.round(c.g * 255);
+                data[i*4+2] = Math.round(c.b * 255);
+                data[i*4+3] = 255;
+            }
+            var tex = new THREE.DataTexture(data, w, 1, THREE.RGBAFormat);
+            tex.magFilter = tex.minFilter = THREE.LinearFilter;
+            tex.wrapS = tex.wrapT = THREE.ClampToEdgeWrapping;
+            tex.generateMipmaps = false;
+            tex.needsUpdate = true;
+            return tex;
+        }
+
+        /* ── GLSL shaders ───────────────────────────────────────── */
+        var face_vert = `
+            attribute vec3 position; uniform vec2 px; uniform vec2 boundarySpace;
+            varying vec2 uv; precision highp float;
+            void main(){
+                vec3 pos = position; vec2 scale = 1.0 - boundarySpace * 2.0;
+                pos.xy *= scale; uv = vec2(0.5) + pos.xy * 0.5;
+                gl_Position = vec4(pos, 1.0);
+            }`;
+
+        var line_vert = `
+            attribute vec3 position; uniform vec2 px; precision highp float; varying vec2 uv;
+            void main(){
+                vec3 pos = position; uv = 0.5 + pos.xy * 0.5;
+                vec2 n = sign(pos.xy); pos.xy = abs(pos.xy) - px * 1.0; pos.xy *= n;
+                gl_Position = vec4(pos, 1.0);
+            }`;
+
+        var mouse_vert = `
+            precision highp float; attribute vec3 position; attribute vec2 uv;
+            uniform vec2 center; uniform vec2 scale; uniform vec2 px; varying vec2 vUv;
+            void main(){
+                vec2 pos = position.xy * scale * 2.0 * px + center;
+                vUv = uv; gl_Position = vec4(pos, 0.0, 1.0);
+            }`;
+
+        var advection_frag = `
+            precision highp float; uniform sampler2D velocity; uniform float dt;
+            uniform bool isBFECC; uniform vec2 fboSize; uniform vec2 px; varying vec2 uv;
+            void main(){
+                vec2 ratio = max(fboSize.x, fboSize.y) / fboSize;
+                if(!isBFECC){
+                    vec2 vel = texture2D(velocity, uv).xy;
+                    gl_FragColor = vec4(texture2D(velocity, uv - vel * dt * ratio).xy, 0.0, 0.0);
+                } else {
+                    vec2 vel_old = texture2D(velocity, uv).xy;
+                    vec2 spot_old = uv - vel_old * dt * ratio;
+                    vec2 vel_new1 = texture2D(velocity, spot_old).xy;
+                    vec2 spot_new2 = spot_old + vel_new1 * dt * ratio;
+                    vec2 spot_new3 = uv - (spot_new2 - uv) / 2.0;
+                    vec2 vel_2 = texture2D(velocity, spot_new3).xy;
+                    vec2 spot_old2 = spot_new3 - vel_2 * dt * ratio;
+                    gl_FragColor = vec4(texture2D(velocity, spot_old2).xy, 0.0, 0.0);
+                }
+            }`;
+
+        var color_frag = `
+            precision highp float; uniform sampler2D velocity; uniform sampler2D palette;
+            uniform vec4 bgColor; varying vec2 uv;
+            void main(){
+                vec2 vel = texture2D(velocity, uv).xy;
+                float lenv = clamp(length(vel), 0.0, 1.0);
+                vec3 c = texture2D(palette, vec2(lenv, 0.5)).rgb;
+                gl_FragColor = vec4(mix(bgColor.rgb, c, lenv), mix(bgColor.a, 1.0, lenv));
+            }`;
+
+        var divergence_frag = `
+            precision highp float; uniform sampler2D velocity; uniform float dt;
+            uniform vec2 px; varying vec2 uv;
+            void main(){
+                float x0 = texture2D(velocity, uv-vec2(px.x,0.0)).x;
+                float x1 = texture2D(velocity, uv+vec2(px.x,0.0)).x;
+                float y0 = texture2D(velocity, uv-vec2(0.0,px.y)).y;
+                float y1 = texture2D(velocity, uv+vec2(0.0,px.y)).y;
+                gl_FragColor = vec4((x1-x0+y1-y0)/2.0/dt);
+            }`;
+
+        var externalForce_frag = `
+            precision highp float; uniform vec2 force; uniform vec2 center;
+            uniform vec2 scale; uniform vec2 px; varying vec2 vUv;
+            void main(){
+                vec2 circle = (vUv - 0.5) * 2.0; float d = 1.0 - min(length(circle), 1.0);
+                gl_FragColor = vec4(force * d * d, 0.0, 1.0);
+            }`;
+
+        var poisson_frag = `
+            precision highp float; uniform sampler2D pressure; uniform sampler2D divergence;
+            uniform vec2 px; varying vec2 uv;
+            void main(){
+                float p0 = texture2D(pressure, uv+vec2(px.x*2.0,0.0)).r;
+                float p1 = texture2D(pressure, uv-vec2(px.x*2.0,0.0)).r;
+                float p2 = texture2D(pressure, uv+vec2(0.0,px.y*2.0)).r;
+                float p3 = texture2D(pressure, uv-vec2(0.0,px.y*2.0)).r;
+                gl_FragColor = vec4((p0+p1+p2+p3)/4.0 - texture2D(divergence,uv).r);
+            }`;
+
+        var pressure_frag = `
+            precision highp float; uniform sampler2D pressure; uniform sampler2D velocity;
+            uniform vec2 px; uniform float dt; varying vec2 uv;
+            void main(){
+                float p0 = texture2D(pressure, uv+vec2(px.x,0.0)).r;
+                float p1 = texture2D(pressure, uv-vec2(px.x,0.0)).r;
+                float p2 = texture2D(pressure, uv+vec2(0.0,px.y)).r;
+                float p3 = texture2D(pressure, uv-vec2(0.0,px.y)).r;
+                vec2 v = texture2D(velocity, uv).xy - vec2(p0-p1, p2-p3) * 0.5 * dt;
+                gl_FragColor = vec4(v, 0.0, 1.0);
+            }`;
+
+        var viscous_frag = `
+            precision highp float; uniform sampler2D velocity; uniform sampler2D velocity_new;
+            uniform float v; uniform vec2 px; uniform float dt; varying vec2 uv;
+            void main(){
+                vec2 old = texture2D(velocity, uv).xy;
+                vec2 n0 = texture2D(velocity_new, uv+vec2(px.x*2.0,0.0)).xy;
+                vec2 n1 = texture2D(velocity_new, uv-vec2(px.x*2.0,0.0)).xy;
+                vec2 n2 = texture2D(velocity_new, uv+vec2(0.0,px.y*2.0)).xy;
+                vec2 n3 = texture2D(velocity_new, uv-vec2(0.0,px.y*2.0)).xy;
+                gl_FragColor = vec4((4.0*old + v*dt*(n0+n1+n2+n3)) / (4.0*(1.0+v*dt)), 0.0, 0.0);
+            }`;
+
+        /* ── Common (renderer + clock) ──────────────────────────── */
+        var Common = {
+            width: 0, height: 0, time: 0, delta: 0,
+            container: null, renderer: null, clock: null,
+            init: function (container) {
+                this.container = container;
+                var pr = Math.min(window.devicePixelRatio || 1, 2);
+                var rect = container.getBoundingClientRect();
+                this.width  = Math.max(1, Math.floor(rect.width));
+                this.height = Math.max(1, Math.floor(rect.height));
+                this.renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true });
+                this.renderer.autoClear = false;
+                this.renderer.setClearColor(new THREE.Color(0x000000), 0);
+                this.renderer.setPixelRatio(pr);
+                this.renderer.setSize(this.width, this.height);
+                var el = this.renderer.domElement;
+                el.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;display:block;';
+                this.clock = new THREE.Clock(); this.clock.start();
+            },
+            resize: function () {
+                if (!this.container) return;
+                var rect = this.container.getBoundingClientRect();
+                this.width  = Math.max(1, Math.floor(rect.width));
+                this.height = Math.max(1, Math.floor(rect.height));
+                if (this.renderer) this.renderer.setSize(this.width, this.height, false);
+            },
+            update: function () {
+                this.delta = this.clock.getDelta();
+                this.time += this.delta;
+            }
+        };
+
+        /* ── Mouse ──────────────────────────────────────────────── */
+        var Mouse = {
+            coords: new THREE.Vector2(), coords_old: new THREE.Vector2(), diff: new THREE.Vector2(),
+            timer: null, container: null, isHoverInside: false, hasUserControl: false,
+            isAutoActive: false, autoIntensity: 2.0, takeoverActive: false,
+            takeoverStartTime: 0, takeoverDuration: 0.25,
+            takeoverFrom: new THREE.Vector2(), takeoverTo: new THREE.Vector2(),
+            onInteract: null, _handlers: {},
+            init: function (container) {
+                this.container = container;
+                var self = this;
+                this._handlers.mm = function (e) { self._onMove(e.clientX, e.clientY, true); };
+                this._handlers.ts = function (e) { if (e.touches.length === 1) self._onMove(e.touches[0].clientX, e.touches[0].clientY, true); };
+                this._handlers.tm = function (e) { if (e.touches.length === 1) self._onMove(e.touches[0].clientX, e.touches[0].clientY, false); };
+                window.addEventListener('mousemove', this._handlers.mm);
+                window.addEventListener('touchstart', this._handlers.ts, { passive: true });
+                window.addEventListener('touchmove',  this._handlers.tm, { passive: true });
+            },
+            dispose: function () {
+                window.removeEventListener('mousemove',   this._handlers.mm);
+                window.removeEventListener('touchstart',  this._handlers.ts);
+                window.removeEventListener('touchmove',   this._handlers.tm);
+            },
+            _onMove: function (cx, cy, trigger) {
+                if (trigger && this.onInteract) this.onInteract();
+                if (trigger && this.isAutoActive && !this.hasUserControl && !this.takeoverActive) {
+                    var rect = this.container ? this.container.getBoundingClientRect() : { left:0, top:0, width:window.innerWidth, height:window.innerHeight };
+                    this.takeoverFrom.copy(this.coords);
+                    this.takeoverTo.set((cx - rect.left) / rect.width * 2 - 1, -((cy - rect.top) / rect.height * 2 - 1));
+                    this.takeoverStartTime = performance.now();
+                    this.takeoverActive = true; this.hasUserControl = true; this.isAutoActive = false;
+                    return;
+                }
+                this._setCoords(cx, cy);
+                if (trigger) this.hasUserControl = true;
+            },
+            _setCoords: function (cx, cy) {
+                var rect = this.container ? this.container.getBoundingClientRect() : { left:0, top:0, width:window.innerWidth, height:window.innerHeight };
+                if (rect.width === 0 || rect.height === 0) return;
+                this.coords.set((cx - rect.left) / rect.width * 2 - 1, -((cy - rect.top) / rect.height * 2 - 1));
+            },
+            setNormalized: function (nx, ny) { this.coords.set(nx, ny); },
+            update: function () {
+                if (this.takeoverActive) {
+                    var t = (performance.now() - this.takeoverStartTime) / (this.takeoverDuration * 1000);
+                    if (t >= 1) {
+                        this.takeoverActive = false;
+                        this.coords.copy(this.takeoverTo);
+                        this.coords_old.copy(this.coords);
+                        this.diff.set(0, 0);
+                    } else {
+                        var k = t * t * (3 - 2 * t);
+                        this.coords.lerpVectors(this.takeoverFrom, this.takeoverTo, k);
+                    }
+                }
+                this.diff.subVectors(this.coords, this.coords_old);
+                this.coords_old.copy(this.coords);
+                if (this.coords_old.x === 0 && this.coords_old.y === 0) this.diff.set(0, 0);
+                if (this.isAutoActive && !this.takeoverActive) this.diff.multiplyScalar(this.autoIntensity);
+            }
+        };
+
+        /* ── AutoDriver ─────────────────────────────────────────── */
+        function AutoDriver(mouse, manager, opts) {
+            this.mouse = mouse; this.manager = manager; this.enabled = opts.enabled;
+            this.speed = opts.speed; this.resumeDelay = opts.resumeDelay || 3000;
+            this.rampMs = (opts.rampDuration || 0) * 1000; this.active = false;
+            this.current = new THREE.Vector2(); this.target = new THREE.Vector2();
+            this.lastTime = performance.now(); this.activationTime = 0; this.margin = 0.2;
+            this._dir = new THREE.Vector2(); this._pickTarget();
+        }
+        AutoDriver.prototype._pickTarget = function () {
+            this.target.set((Math.random()*2-1)*(1-this.margin), (Math.random()*2-1)*(1-this.margin));
+        };
+        AutoDriver.prototype.forceStop = function () {
+            this.active = false; this.mouse.isAutoActive = false;
+        };
+        AutoDriver.prototype.update = function () {
+            if (!this.enabled) return;
+            var now = performance.now();
+            if (now - this.manager.lastInteraction < this.resumeDelay) { if (this.active) this.forceStop(); return; }
+            if (!this.active) { this.active = true; this.current.copy(this.mouse.coords); this.lastTime = now; this.activationTime = now; }
+            this.mouse.isAutoActive = true;
+            var dt = Math.min((now - this.lastTime) / 1000, 0.2); this.lastTime = now;
+            this._dir.subVectors(this.target, this.current);
+            var dist = this._dir.length();
+            if (dist < 0.01) { this._pickTarget(); return; }
+            this._dir.normalize();
+            var ramp = 1;
+            if (this.rampMs > 0) { var t = Math.min(1, (now - this.activationTime) / this.rampMs); ramp = t*t*(3-2*t); }
+            this.current.addScaledVector(this._dir, Math.min(this.speed * dt * ramp, dist));
+            this.mouse.setNormalized(this.current.x, this.current.y);
+        };
+
+        /* ── ShaderPass base ────────────────────────────────────── */
+        function ShaderPass(props) {
+            this.props = props || {}; this.uniforms = props && props.material ? props.material.uniforms : null;
+            this.scene = null; this.camera = null; this.material = null; this.geometry = null; this.plane = null;
+        }
+        ShaderPass.prototype.init = function () {
+            this.scene = new THREE.Scene(); this.camera = new THREE.Camera();
+            if (this.uniforms) {
+                this.material = new THREE.RawShaderMaterial(this.props.material);
+                this.geometry = new THREE.PlaneGeometry(2, 2);
+                this.plane = new THREE.Mesh(this.geometry, this.material);
+                this.scene.add(this.plane);
+            }
+        };
+        ShaderPass.prototype.render = function () {
+            if (!Common.renderer || !this.scene || !this.camera) return;
+            Common.renderer.setRenderTarget(this.props.output || null);
+            Common.renderer.render(this.scene, this.camera);
+            Common.renderer.setRenderTarget(null);
+        };
+
+        /* ── Advection ──────────────────────────────────────────── */
+        function Advection(sp) {
+            ShaderPass.call(this, { material: { vertexShader: face_vert, fragmentShader: advection_frag, uniforms: { boundarySpace: { value: sp.cellScale }, px: { value: sp.cellScale }, fboSize: { value: sp.fboSize }, velocity: { value: sp.src.texture }, dt: { value: sp.dt }, isBFECC: { value: true } } }, output: sp.dst });
+            this.init();
+            var bg = new THREE.BufferGeometry();
+            bg.setAttribute('position', new THREE.BufferAttribute(new Float32Array([-1,-1,0,-1,1,0,-1,1,0,1,1,0,1,1,0,1,-1,0,1,-1,0,-1,-1,0]), 3));
+            this.line = new THREE.LineSegments(bg, new THREE.RawShaderMaterial({ vertexShader: line_vert, fragmentShader: advection_frag, uniforms: this.uniforms }));
+            this.scene.add(this.line);
+        }
+        Advection.prototype = Object.create(ShaderPass.prototype);
+        Advection.prototype.update = function (args) {
+            this.uniforms.dt.value = args.dt; this.line.visible = args.isBounce; this.uniforms.isBFECC.value = args.BFECC;
+            ShaderPass.prototype.render.call(this);
+        };
+
+        /* ── ExternalForce ──────────────────────────────────────── */
+        function ExternalForce(sp) {
+            ShaderPass.call(this, { output: sp.dst }); this.init();
+            var m = new THREE.RawShaderMaterial({ vertexShader: mouse_vert, fragmentShader: externalForce_frag, blending: THREE.AdditiveBlending, depthWrite: false, uniforms: { px: { value: sp.cellScale }, force: { value: new THREE.Vector2() }, center: { value: new THREE.Vector2() }, scale: { value: new THREE.Vector2(sp.cursor_size, sp.cursor_size) } } });
+            this.mouseMesh = new THREE.Mesh(new THREE.PlaneGeometry(1,1), m); this.scene.add(this.mouseMesh);
+        }
+        ExternalForce.prototype = Object.create(ShaderPass.prototype);
+        ExternalForce.prototype.update = function (args) {
+            var u = this.mouseMesh.material.uniforms;
+            u.force.value.set(Mouse.diff.x / 2 * args.mouse_force, Mouse.diff.y / 2 * args.mouse_force);
+            u.center.value.copy(Mouse.coords); u.scale.value.set(args.cursor_size, args.cursor_size);
+            ShaderPass.prototype.render.call(this);
+        };
+
+        /* ── Viscous ────────────────────────────────────────────── */
+        function Viscous(sp) {
+            ShaderPass.call(this, { material: { vertexShader: face_vert, fragmentShader: viscous_frag, uniforms: { boundarySpace:{value:sp.boundarySpace}, velocity:{value:sp.src.texture}, velocity_new:{value:sp.dst_.texture}, v:{value:sp.viscous}, px:{value:sp.cellScale}, dt:{value:sp.dt} } }, output:sp.dst, out0:sp.dst_, out1:sp.dst });
+            this.init();
+        }
+        Viscous.prototype = Object.create(ShaderPass.prototype);
+        Viscous.prototype.update = function (args) {
+            for (var i = 0; i < args.iterations; i++) {
+                var fi = i%2===0 ? this.props.out0 : this.props.out1;
+                var fo = i%2===0 ? this.props.out1 : this.props.out0;
+                this.uniforms.velocity_new.value = fi.texture; this.props.output = fo; this.uniforms.dt.value = args.dt;
+                ShaderPass.prototype.render.call(this);
+            }
+            return args.iterations%2===0 ? this.props.out0 : this.props.out1;
+        };
+
+        /* ── Divergence ─────────────────────────────────────────── */
+        function Divergence(sp) {
+            ShaderPass.call(this, { material: { vertexShader: face_vert, fragmentShader: divergence_frag, uniforms: { boundarySpace:{value:sp.boundarySpace}, velocity:{value:sp.src.texture}, px:{value:sp.cellScale}, dt:{value:sp.dt} } }, output:sp.dst });
+            this.init();
+        }
+        Divergence.prototype = Object.create(ShaderPass.prototype);
+        Divergence.prototype.update = function (args) {
+            this.uniforms.velocity.value = args.vel.texture; ShaderPass.prototype.render.call(this);
+        };
+
+        /* ── Poisson ────────────────────────────────────────────── */
+        function Poisson(sp) {
+            ShaderPass.call(this, { material: { vertexShader: face_vert, fragmentShader: poisson_frag, uniforms: { boundarySpace:{value:sp.boundarySpace}, pressure:{value:sp.dst_.texture}, divergence:{value:sp.src.texture}, px:{value:sp.cellScale} } }, output:sp.dst, out0:sp.dst_, out1:sp.dst });
+            this.init();
+        }
+        Poisson.prototype = Object.create(ShaderPass.prototype);
+        Poisson.prototype.update = function (args) {
+            for (var i = 0; i < args.iterations; i++) {
+                var pi = i%2===0 ? this.props.out0 : this.props.out1;
+                var po = i%2===0 ? this.props.out1 : this.props.out0;
+                this.uniforms.pressure.value = pi.texture; this.props.output = po;
+                ShaderPass.prototype.render.call(this);
+            }
+            return args.iterations%2===0 ? this.props.out0 : this.props.out1;
+        };
+
+        /* ── Pressure ───────────────────────────────────────────── */
+        function Pressure(sp) {
+            ShaderPass.call(this, { material: { vertexShader: face_vert, fragmentShader: pressure_frag, uniforms: { boundarySpace:{value:sp.boundarySpace}, pressure:{value:sp.src_p.texture}, velocity:{value:sp.src_v.texture}, px:{value:sp.cellScale}, dt:{value:sp.dt} } }, output:sp.dst });
+            this.init();
+        }
+        Pressure.prototype = Object.create(ShaderPass.prototype);
+        Pressure.prototype.update = function (args) {
+            this.uniforms.velocity.value = args.vel.texture; this.uniforms.pressure.value = args.pressure.texture;
+            ShaderPass.prototype.render.call(this);
+        };
+
+        /* ── Simulation ─────────────────────────────────────────── */
+        function Simulation(opts) {
+            this.opts = Object.assign({ iterations_poisson:32, iterations_viscous:32, mouse_force:20, resolution:0.5, cursor_size:100, viscous:30, isBounce:false, dt:0.014, isViscous:false, BFECC:true }, opts);
+            this.fboSize = new THREE.Vector2(); this.cellScale = new THREE.Vector2(); this.boundarySpace = new THREE.Vector2();
+            this.fbos = {}; this._calcSize(); this._createFBOs(); this._createPasses();
+        }
+        Simulation.prototype._floatType = function () {
+            return /(iPad|iPhone|iPod)/i.test(navigator.userAgent) ? THREE.HalfFloatType : THREE.FloatType;
+        };
+        Simulation.prototype._calcSize = function () {
+            var w = Math.max(1, Math.round(this.opts.resolution * Common.width));
+            var h = Math.max(1, Math.round(this.opts.resolution * Common.height));
+            this.cellScale.set(1/w, 1/h); this.fboSize.set(w, h);
+        };
+        Simulation.prototype._createFBOs = function () {
+            var type = this._floatType();
+            var o = { type:type, depthBuffer:false, stencilBuffer:false, minFilter:THREE.LinearFilter, magFilter:THREE.LinearFilter, wrapS:THREE.ClampToEdgeWrapping, wrapT:THREE.ClampToEdgeWrapping };
+            var keys = ['vel_0','vel_1','vel_v0','vel_v1','div','p0','p1'];
+            for (var i = 0; i < keys.length; i++) this.fbos[keys[i]] = new THREE.WebGLRenderTarget(this.fboSize.x, this.fboSize.y, o);
+        };
+        Simulation.prototype._createPasses = function () {
+            var f = this.fbos, cs = this.cellScale, bs = this.boundarySpace, fs = this.fboSize, dt = this.opts.dt;
+            this.advection    = new Advection({ cellScale:cs, fboSize:fs, dt:dt, src:f.vel_0, dst:f.vel_1 });
+            this.externalForce= new ExternalForce({ cellScale:cs, cursor_size:this.opts.cursor_size, dst:f.vel_1 });
+            this.viscous      = new Viscous({ cellScale:cs, boundarySpace:bs, viscous:this.opts.viscous, src:f.vel_1, dst:f.vel_v1, dst_:f.vel_v0, dt:dt });
+            this.divergence   = new Divergence({ cellScale:cs, boundarySpace:bs, src:f.vel_v0, dst:f.div, dt:dt });
+            this.poisson      = new Poisson({ cellScale:cs, boundarySpace:bs, src:f.div, dst:f.p1, dst_:f.p0 });
+            this.pressure     = new Pressure({ cellScale:cs, boundarySpace:bs, src_p:f.p0, src_v:f.vel_v0, dst:f.vel_0, dt:dt });
+        };
+        Simulation.prototype.resize = function () {
+            this._calcSize();
+            var self = this;
+            Object.keys(this.fbos).forEach(function (k) { self.fbos[k].setSize(self.fboSize.x, self.fboSize.y); });
+        };
+        Simulation.prototype.update = function () {
+            var o = this.opts, bounce = o.isBounce;
+            this.boundarySpace.copy(bounce ? new THREE.Vector2() : this.cellScale);
+            this.advection.update({ dt:o.dt, isBounce:bounce, BFECC:o.BFECC });
+            this.externalForce.update({ cursor_size:o.cursor_size, mouse_force:o.mouse_force });
+            var vel = this.fbos.vel_1;
+            if (o.isViscous) vel = this.viscous.update({ iterations:o.iterations_viscous, dt:o.dt });
+            this.divergence.update({ vel:vel });
+            var pressure = this.poisson.update({ iterations:o.iterations_poisson });
+            this.pressure.update({ vel:vel, pressure:pressure });
+        };
+
+        /* ── Output (color render) ──────────────────────────────── */
+        function Output(palTex, bgVec4, simOpts) {
+            this.sim = new Simulation(simOpts);
+            this.scene = new THREE.Scene(); this.camera = new THREE.Camera();
+            var mesh = new THREE.Mesh(new THREE.PlaneGeometry(2,2), new THREE.RawShaderMaterial({
+                vertexShader: face_vert, fragmentShader: color_frag, transparent: true, depthWrite: false,
+                uniforms: { velocity:{value:this.sim.fbos.vel_0.texture}, boundarySpace:{value:new THREE.Vector2()}, palette:{value:palTex}, bgColor:{value:bgVec4} }
+            }));
+            this.scene.add(mesh);
+        }
+        Output.prototype.resize = function () { this.sim.resize(); };
+        Output.prototype.update = function () {
+            this.sim.update();
+            Common.renderer.setRenderTarget(null);
+            Common.renderer.render(this.scene, this.camera);
+        };
+
+        /* ── WebGLManager ───────────────────────────────────────── */
+        function WebGLManager(container, cfg) {
+            var self = this;
+            this.lastInteraction = performance.now();
+            this.running = false; this._raf = null; this._rraf = null;
+
+            Common.init(container);
+            Mouse.init(container);
+            Mouse.autoIntensity   = cfg.autoIntensity;
+            Mouse.takeoverDuration = cfg.takeoverDuration;
+            Mouse.onInteract = function () {
+                self.lastInteraction = performance.now();
+                if (self.autoDriver) self.autoDriver.forceStop();
+            };
+
+            this.autoDriver = new AutoDriver(Mouse, this, {
+                enabled: cfg.autoDemo, speed: cfg.autoSpeed,
+                resumeDelay: cfg.autoResumeDelay, rampDuration: cfg.autoRampDuration
+            });
+
+            var palTex = makePaletteTexture(cfg.colors || COLORS);
+            var bgVec4 = new THREE.Vector4(0.02, 0.12, 0.12, 0.10);
+
+            this.output = new Output(palTex, bgVec4, {
+                iterations_poisson: cfg.iterationsPoisson, iterations_viscous: cfg.iterationsViscous,
+                mouse_force: cfg.mouseForce, resolution: cfg.resolution, cursor_size: cfg.cursorSize,
+                viscous: cfg.viscous, isBounce: cfg.isBounce, dt: cfg.dt,
+                isViscous: cfg.isViscous, BFECC: cfg.BFECC
+            });
+
+            container.appendChild(Common.renderer.domElement);
+
+            window.addEventListener('resize', function () {
+                if (self._rraf) cancelAnimationFrame(self._rraf);
+                self._rraf = requestAnimationFrame(function () { Common.resize(); self.output.resize(); });
+            });
+            document.addEventListener('visibilitychange', function () {
+                document.hidden ? self.pause() : self.start();
+            });
+
+            this.start();
+        }
+        WebGLManager.prototype._tick = function () {
+            if (!this.running) return;
+            if (this.autoDriver) this.autoDriver.update();
+            Mouse.update(); Common.update(); this.output.update();
+            var self = this; this._raf = requestAnimationFrame(function () { self._tick(); });
+        };
+        WebGLManager.prototype.start = function () {
+            if (!this.running) { this.running = true; this._tick(); }
+        };
+        WebGLManager.prototype.pause = function () {
+            this.running = false;
+            if (this._raf) { cancelAnimationFrame(this._raf); this._raf = null; }
+        };
+
+        /* ── Boot ───────────────────────────────────────────────── */
+        function boot() {
+            var el = document.getElementById('liquid-bg');
+            if (!el) { console.warn('LiquidEther: #liquid-bg not found'); return; }
+            if (typeof THREE === 'undefined') { console.warn('LiquidEther: THREE not loaded'); return; }
+            try { new WebGLManager(el, CFG); }
+            catch(e) { console.error('LiquidEther init error:', e); }
+        }
+
+        window.addEventListener('load', boot);
+
+    })();
+    </script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+        function initHorizontalScroll() {
+            gsap.registerPlugin(ScrollTrigger);
+
+            document.querySelectorAll('.cs-section').forEach(function(section) {
+                var track    = section.querySelector('.cs-track');
+                var viewport = section.querySelector('.cs-viewport');
+                var stepsEl  = section.querySelector('.cs-steps');
+                var fill     = section.querySelector('.cs-progress-fill');
+                var steps    = stepsEl ? Array.from(stepsEl.querySelectorAll('.cs-step')) : [];
+                var numCards = section.querySelectorAll('.cs-card').length;
+
+                gsap.to(track, {
+                    x: function () { return -(track.scrollWidth - viewport.clientWidth); },
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: section,
+                        pin: true,
+                        scrub: 0.5,
+                        start: 'top 20px',
+                        end: function () { return '+=' + (track.scrollWidth - viewport.clientWidth) * 0.5; },
+                        invalidateOnRefresh: true,
+                        anticipatePin: 1,
+                        onUpdate: function (self) {
+                            var p = self.progress;
+                            if (fill) fill.style.width = (p * 100) + '%';
+                            var ai = Math.min(Math.round(p * (numCards - 1)), numCards - 1);
+                            steps.forEach(function (s, i) { s.classList.toggle('active', i === ai); });
+                        }
+                    }
+                });
+            });
+        }
+
+        window.addEventListener('load', function () {
+            setTimeout(initHorizontalScroll, 150);
+        });
+    </script>
+
+    <!-- Proximity glow for CTA — same logic as index.html -->
+    <script>
+    (function () {
+        const card = document.getElementById('ctaCard');
+        if (!card) return;
+
+        const TRIGGER_RADIUS = 350;
+        const clamp = (v, lo, hi) => Math.min(Math.max(v, lo), hi);
+        const round = (v) => parseFloat(v.toFixed(3));
+
+        function distToRect(rect, px, py) {
+            const cx = clamp(px, rect.left, rect.right);
+            const cy = clamp(py, rect.top, rect.bottom);
+            return Math.sqrt((px - cx) ** 2 + (py - cy) ** 2);
+        }
+
+        function angleFromCenter(rect, px, py) {
+            const cx = rect.left + rect.width / 2;
+            const cy = rect.top + rect.height / 2;
+            const dx = px - cx, dy = py - cy;
+            if (dx === 0 && dy === 0) return 0;
+            let deg = Math.atan2(dy, dx) * (180 / Math.PI) + 90;
+            if (deg < 0) deg += 360;
+            return deg;
+        }
+
+        document.addEventListener('pointermove', e => {
+            const mx = e.clientX, my = e.clientY;
+            const rect = card.getBoundingClientRect();
+            const dist = distToRect(rect, mx, my);
+
+            const proximity = clamp(1 - dist / TRIGGER_RADIUS, 0, 1);
+            const eased = proximity * proximity * (3 - 2 * proximity);
+
+            const lx = clamp(mx - rect.left, 0, rect.width);
+            const ly = clamp(my - rect.top, 0, rect.height);
+            const px = clamp((100 / rect.width) * lx, 0, 100);
+            const py = clamp((100 / rect.height) * ly, 0, 100);
+            const angle = angleFromCenter(rect, mx, my);
+
+            card.style.setProperty('--pointer-x', round(px) + '%');
+            card.style.setProperty('--pointer-y', round(py) + '%');
+            card.style.setProperty('--pointer-deg', round(angle) + 'deg');
+            card.style.setProperty('--proximity', round(eased));
+        });
+    })();
+
+    // ── Text Scramble ────────────────────────────────────────────
+    const SCRAMBLE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&';
+    function scrambleEl(el) {
+        const orig = el.textContent;
+        let step = 0;
+        const total = orig.length * 3;
+        const iv = setInterval(() => {
+            el.textContent = orig.split('').map((ch, i) => {
+                if (ch === ' ') return ch;
+                return i < step / 3 ? ch : SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)];
+            }).join('');
+            step++;
+            if (step > total) { el.textContent = orig; clearInterval(iv); }
+        }, 28);
+    }
+    const scrambleObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { scrambleEl(e.target); scrambleObs.unobserve(e.target); }
+        });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.scramble-word').forEach(el => scrambleObs.observe(el));
+    </script>
+
+    <!-- Glowing Edge Cards (proximity-based) -->
+    <script>
+    (function () {
+        const cards = document.querySelectorAll('.glow-card');
+        const TRIGGER_RADIUS = 350;
+        const clamp = (v, lo, hi) => Math.min(Math.max(v, lo), hi);
+        const round = (v) => parseFloat(v.toFixed(3));
+
+        function distToRect(rect, px, py) {
+            const cx = clamp(px, rect.left, rect.right);
+            const cy = clamp(py, rect.top, rect.bottom);
+            return Math.sqrt((px - cx) ** 2 + (py - cy) ** 2);
+        }
+
+        function angleFromCenter(rect, px, py) {
+            const cx = rect.left + rect.width / 2;
+            const cy = rect.top + rect.height / 2;
+            const dx = px - cx, dy = py - cy;
+            if (dx === 0 && dy === 0) return 0;
+            let deg = Math.atan2(dy, dx) * (180 / Math.PI) + 90;
+            if (deg < 0) deg += 360;
+            return deg;
+        }
+
+        cards.forEach(card => {
+            ['gc-mesh-border', 'gc-glow'].forEach(cls => {
+                const div = document.createElement('div');
+                div.className = cls;
+                card.insertBefore(div, card.firstChild);
+            });
+        });
+
+        document.addEventListener('pointermove', e => {
+            const mx = e.clientX, my = e.clientY;
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const dist = distToRect(rect, mx, my);
+                const proximity = clamp(1 - dist / TRIGGER_RADIUS, 0, 1);
+                const eased = proximity * proximity * (3 - 2 * proximity);
+                const lx = clamp(mx - rect.left, 0, rect.width);
+                const ly = clamp(my - rect.top, 0, rect.height);
+                const px = clamp((100 / rect.width) * lx, 0, 100);
+                const py = clamp((100 / rect.height) * ly, 0, 100);
+                const angle = angleFromCenter(rect, mx, my);
+                card.style.setProperty('--pointer-x', round(px) + '%');
+                card.style.setProperty('--pointer-y', round(py) + '%');
+                card.style.setProperty('--pointer-deg', round(angle) + 'deg');
+                card.style.setProperty('--proximity', round(eased));
+            });
+        });
+    })();
+    </script>
+</body>
+</html>
